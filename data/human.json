@@ -1,0 +1,28 @@
+{
+  "person": {
+    "bostedsadresse": {
+      "adresse": "Ålfjordgaten 4",
+      "postnummer": "5514",
+      "poststed": "Haugesund"
+    },
+    "fodselsdato": "1978-05-22T18:52:08.325Z",
+    "fodselsnummer": {
+      "identifikatorverdi": "22057812345"
+    },
+    "kontaktinformasjon": {
+      "epostadresse": "harald.sund@haugnet.no",
+      "mobiltelefonummer": "41414141",
+      "nettsted": "http://harald.sund.no"
+    },
+    "navn": {
+      "etternavn": "Sund",
+      "fornavn": "Harald"
+    },
+    "postadresse": {
+      "adresse": "Ålfjordgaten 4",
+      "postnummer": "5514",
+      "poststed": "Haugesund"
+    }
+  },
+  "relatedToEmployeeNr": "100000"
+}
