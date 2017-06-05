@@ -1,0 +1,97 @@
+[
+  {
+    "employment": {
+      "ansettelsesprosent": 100.0,
+      "arslonn": 503000.0,
+      "gyldighetsperiode": {
+        "slutt": "2017-06-04T19:53:36.634Z",
+        "start": "2017-06-04T19:53:36.634Z"
+      },
+      "hovedstilling": true,
+      "lonnsprosent": 100,
+      "stillingsnummer": "1",
+      "stillingstittel": "string",
+      "systemId": {
+        "identifikatorverdi": "100000:1"
+      }
+    },
+    "relatedToEmployeeNr": "100000",
+    "relatedToOrgId": "string"
+  },
+  {
+    "employment": {
+      "ansettelsesprosent": 100.0,
+      "arslonn": 480000.0,
+      "gyldighetsperiode": {
+        "slutt": "2017-06-04T19:53:36.634Z",
+        "start": "2017-06-04T19:53:36.634Z"
+      },
+      "hovedstilling": true,
+      "lonnsprosent": 100,
+      "stillingsnummer": "1",
+      "stillingstittel": "string",
+      "systemId": {
+        "identifikatorverdi": "100001:1"
+      }
+    },
+    "relatedToEmployeeNr": "100001",
+    "relatedToOrgId": "string"
+  },
+  {
+    "employment": {
+      "ansettelsesprosent": 100.0,
+      "arslonn": 623000.0,
+      "gyldighetsperiode": {
+        "slutt": "2017-06-04T19:53:36.634Z",
+        "start": "2017-06-04T19:53:36.634Z"
+      },
+      "hovedstilling": true,
+      "lonnsprosent": 100,
+      "stillingsnummer": "1",
+      "stillingstittel": "string",
+      "systemId": {
+        "identifikatorverdi": "100002:1"
+      }
+    },
+    "relatedToEmployeeNr": "100002",
+    "relatedToOrgId": "string"
+  },
+  {
+    "employment": {
+      "ansettelsesprosent": 100.0,
+      "arslonn": 473000.0,
+      "gyldighetsperiode": {
+        "slutt": "2017-06-04T19:53:36.634Z",
+        "start": "2017-06-04T19:53:36.634Z"
+      },
+      "hovedstilling": true,
+      "lonnsprosent": 100,
+      "stillingsnummer": "1",
+      "stillingstittel": "string",
+      "systemId": {
+        "identifikatorverdi": "100003:1"
+      }
+    },
+    "relatedToEmployeeNr": "100003",
+    "relatedToOrgId": "string"
+  },
+  {
+    "employment": {
+      "ansettelsesprosent": 100.0,
+      "arslonn": 571000.0,
+      "gyldighetsperiode": {
+        "slutt": "2017-06-04T19:53:36.634Z",
+        "start": "2017-06-04T19:53:36.634Z"
+      },
+      "hovedstilling": true,
+      "lonnsprosent": 100,
+      "stillingsnummer": "1",
+      "stillingstittel": "string",
+      "systemId": {
+        "identifikatorverdi": "100004:1"
+      }
+    },
+    "relatedToEmployeeNr": "100004",
+    "relatedToOrgId": "string"
+  }
+]

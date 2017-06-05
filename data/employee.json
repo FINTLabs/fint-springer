@@ -1,0 +1,151 @@
+[
+  {
+    "employee": {
+      "ansattnummer": {
+        "identifikatorverdi": "100000"
+      },
+      "ansettelsesperiode": {
+        "start": "2010-06-04T00:00:00.000Z",
+        "slutt": "2099-31-12T00:00:00.000Z"
+      },
+      "brukernavn": {
+        "gyldighetsperiode": {
+          "start": "2010-06-04T00:00:00.000ZZ",
+          "slutt": "2099-31-12T00:00:00.000Z"
+        },
+        "identifikatorverdi": "hsund"
+      },
+      "kontaktinformasjon": {
+        "epostadresse": "harald.sund@rogfk.no",
+        "mobiltelefonummer": "41414141",
+        "nettsted": "http://www.rogfk.no",
+        "sip": "harald.sund@rogfk.no",
+        "telefonnummer": "51516278"
+      },
+      "systemId": {
+        "identifikatorverdi": "8AC2A702-3E88-4D83-B37E-9DBFB79DD82C"
+      }
+    },
+    "relatedToEmploymentNr": [
+      "100000:1"
+    ],
+    "relatedToPersonNr": "22057812345"
+  },
+  {
+    "employee": {
+      "ansattnummer": {
+        "identifikatorverdi": "100001"
+      },
+      "ansettelsesperiode": {
+        "start": "2010-06-04T00:00:00.000Z",
+        "slutt": "2099-31-12T00:00:00.000Z"
+      },
+      "brukernavn": {
+        "gyldighetsperiode": {
+          "start": "2010-06-04T00:00:00.000ZZ",
+          "slutt": "2099-31-12T00:00:00.000Z"
+        },
+        "identifikatorverdi": "khaug"
+      },
+      "kontaktinformasjon": {
+        "epostadresse": "kari.haug@rogfk.no",
+        "mobiltelefonummer": "42424242",
+        "nettsted": "http://www.rogfk.no",
+        "sip": "kari.haug@rogfk.no",
+        "telefonnummer": "51516062"
+      },
+      "systemId": {
+        "identifikatorverdi": "D93DE741-FD6E-4DD4-BF5C-7398CECF3712"
+      }
+    },
+    "relatedToEmploymentNr": ["100001:1"],
+    "relatedToPersonNr": "01116423456"
+  },
+  {
+    "employee": {
+      "ansattnummer": {
+        "identifikatorverdi": "100002"
+      },
+      "ansettelsesperiode": {
+        "start": "2010-06-04T00:00:00.000Z",
+        "slutt": "2099-31-12T00:00:00.000Z"
+      },
+      "brukernavn": {
+        "gyldighetsperiode": {
+          "start": "2010-06-04T00:00:00.000ZZ",
+          "slutt": "2099-31-12T00:00:00.000Z"
+        },
+        "identifikatorverdi": "kegudnersen"
+      },
+      "kontaktinformasjon": {
+        "epostadresse": "kay.erik.gundersen@rogfk.no",
+        "mobiltelefonummer": "43434343",
+        "nettsted": "http://www.rogfk.no",
+        "sip": "kay.erik.gundersen@rogfk.no"
+      },
+      "systemId": {
+        "identifikatorverdi": "0385AC48-342D-430B-97C4-2059FD7213D7"
+      }
+    },
+    "relatedToEmploymentNr": ["100002:1"],
+    "relatedToPersonNr": "12077134567"
+  },
+  {
+    "employee": {
+      "ansattnummer": {
+        "identifikatorverdi": "100003"
+      },
+      "ansettelsesperiode": {
+        "start": "2010-06-04T00:00:00.000Z",
+        "slutt": "2099-31-12T00:00:00.000Z"
+      },
+      "brukernavn": {
+        "gyldighetsperiode": {
+          "start": "2010-06-04T00:00:00.000ZZ",
+          "slutt": "2099-31-12T00:00:00.000Z"
+        },
+        "identifikatorverdi": "gharaldseid"
+      },
+      "kontaktinformasjon": {
+        "epostadresse": "gudrun.haraldseid@rogfk.no",
+        "mobiltelefonummer": "44444444",
+        "nettsted": "http://www.rogfk.no",
+        "sip": "gudrun.haraldseid@rogfk.no"
+      },
+      "systemId": {
+        "identifikatorverdi": "B3B2A996-BD1E-4058-9B69-94B0FD9F75C5"
+      }
+    },
+    "relatedToEmploymentNr": ["100003:1"],
+    "relatedToPersonNr": "16055445678"
+  },
+  {
+    "employee": {
+      "ansattnummer": {
+        "identifikatorverdi": "100004"
+      },
+      "ansettelsesperiode": {
+        "start": "2010-06-04T00:00:00.000Z",
+        "slutt": "2099-31-12T00:00:00.000Z"
+      },
+      "brukernavn": {
+        "gyldighetsperiode": {
+          "start": "2010-06-04T00:00:00.000ZZ",
+          "slutt": "2099-31-12T00:00:00.000Z"
+        },
+        "identifikatorverdi": "ctollaksen"
+      },
+      "kontaktinformasjon": {
+        "epostadresse": "cathrine.tollaksen@rogfk.no",
+        "mobiltelefonummer": "45454545",
+        "nettsted": "http://www.rogfk.no",
+        "sip": "cathrine.tollaksen@rogfk.no"
+      },
+      "systemId": {
+        "identifikatorverdi": "70F3F121-C7CF-42D8-8311-9A5FF0AB090B"
+      }
+    },
+    "relatedToEmploymentNr": ["100004:1"],
+    "relatedToPersonNr": "12018156789"
+  }
+]

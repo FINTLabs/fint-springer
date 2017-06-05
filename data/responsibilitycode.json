@@ -1,0 +1,20 @@
+[
+  {
+    "id": "string",
+    "responsibilityCode": {
+      "gyldighetsperiode": {
+        "slutt": "2017-06-05T14:35:50.260Z",
+        "start": "2017-06-05T14:35:50.260Z"
+      },
+      "kode": "string",
+      "navn": "string",
+      "systemId": {
+        "gyldighetsperiode": {
+          "slutt": "2017-06-05T14:35:50.260Z",
+          "start": "2017-06-05T14:35:50.260Z"
+        },
+        "identifikatorverdi": "string"
+      }
+    }
+  }
+]

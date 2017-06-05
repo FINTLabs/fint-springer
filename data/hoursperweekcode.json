@@ -1,0 +1,53 @@
+[
+  {
+    "hoursPerWeekCode": {
+      "gyldighetsperiode": {
+        "slutt": "2017-06-05T00:00:00.000Z",
+        "start": "2017-06-05T00:00:00.000Z"
+      },
+      "kode": "35,5",
+      "navn": "35,5 timers uke",
+      "systemId": {
+        "gyldighetsperiode": {
+          "slutt": "2017-06-05T00:00:00.000Z",
+          "start": "2017-06-05T00:00:00.000Z"
+        },
+        "identifikatorverdi": "35,5"
+      }
+    }
+  },
+  {
+    "hoursPerWeekCode": {
+      "gyldighetsperiode": {
+        "slutt": "2017-06-05T00:00:00.000Z",
+        "start": "2017-06-05T00:00:00.000Z"
+      },
+      "kode": "36,0",
+      "navn": "36,0 timers uke",
+      "systemId": {
+        "gyldighetsperiode": {
+          "slutt": "2017-06-05T00:00:00.000Z",
+          "start": "2017-06-05T00:00:00.000Z"
+        },
+        "identifikatorverdi": "36,0"
+      }
+    }
+  },
+  {
+    "hoursPerWeekCode": {
+      "gyldighetsperiode": {
+        "slutt": "2017-06-05T00:00:00.000Z",
+        "start": "2017-06-05T00:00:00.000Z"
+      },
+      "kode": "37,5",
+      "navn": "37,5 timers uke",
+      "systemId": {
+        "gyldighetsperiode": {
+          "slutt": "2017-06-05T00:00:00.000Z",
+          "start": "2017-06-05T00:00:00.000Z"
+        },
+        "identifikatorverdi": "37,5"
+      }
+    }
+  }
+]

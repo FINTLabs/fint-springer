@@ -1,0 +1,143 @@
+[
+  {
+    "organisation": {
+      "forretningsadresse": {
+        "adresse": "Haraldsgaten 1",
+        "postnummer": "5500",
+        "poststed": "Haugesund"
+      },
+      "gyldighetsperiode": {
+        "slutt": "2017-06-04T19:53:36.831Z",
+        "start": "2017-06-04T19:53:36.831Z"
+      },
+      "kontaktinformasjon": {
+        "epostadresse": "post@haugfk.no",
+        "mobiltelefonummer": "47474747",
+        "nettsted": "http://www.haugfk.no",
+        "sip": "kundesenter@haugfk.no",
+        "telefonnummer": "52525252"
+      },
+      "kortnavn": "Haugaland",
+      "navn": "Haugaland fylkeskommune",
+      "organisasjonsId": {
+        "identifikatorverdi": "550000"
+      },
+      "organisasjonsKode": {
+        "gyldighetsperiode": {
+          "slutt": "2017-06-04T19:53:36.831Z",
+          "start": "2017-06-04T19:53:36.831Z"
+        },
+        "identifikatorverdi": "HAUGFK"
+      },
+      "organisasjonsnavn": "Haugaland fylkeskommune",
+      "organisasjonsnummer": {
+        "identifikatorverdi": "970123456"
+      },
+      "postadresse": {
+        "adresse": "PB 1",
+        "postnummer": "5501",
+        "poststed": "Haugesund"
+      }
+    },
+    "relatedToOrgChildNr": [
+      "550001"
+    ],
+    "relatedToOrgPartenNr": "550000"
+  },
+  {
+    "organisation": {
+      "forretningsadresse": {
+        "adresse": "Haraldsgaten 1",
+        "postnummer": "5500",
+        "poststed": "Haugesund"
+      },
+      "gyldighetsperiode": {
+        "slutt": "2017-06-04T19:53:36.831Z",
+        "start": "2017-06-04T19:53:36.831Z"
+      },
+      "kontaktinformasjon": {
+        "epostadresse": "post@haugfk.no",
+        "mobiltelefonummer": "47474747",
+        "nettsted": "http://www.haugfk.no",
+        "sip": "kundesenter@haugfk.no",
+        "telefonnummer": "52525252"
+      },
+      "kortnavn": "Opplæring",
+      "navn": "Opplæringsavdelingen",
+      "organisasjonsId": {
+        "identifikatorverdi": "550001"
+      },
+      "organisasjonsKode": {
+        "gyldighetsperiode": {
+          "slutt": "2017-06-04T19:53:36.831Z",
+          "start": "2017-06-04T19:53:36.831Z"
+        },
+        "identifikatorverdi": "OPPLAVD"
+      },
+      "organisasjonsnavn": "Haugaland fylkeskommune, Opplæringsavdelingen",
+      "organisasjonsnummer": {
+        "identifikatorverdi": "970123457"
+      },
+      "postadresse": {
+        "adresse": "PB 1",
+        "postnummer": "5501",
+        "poststed": "Haugesund"
+      }
+    },
+    "relatedToEmploymentNr": [
+      "100000",
+      "100001"
+    ],
+    "relatedToOrgChildNr": [
+      "560000"
+    ],
+    "relatedToOrgPartenNr": "550000"
+  },
+  {
+    "organisation": {
+      "forretningsadresse": {
+        "adresse": "Marilyn Monroe 1",
+        "postnummer": "5520",
+        "poststed": "Haugesund"
+      },
+      "gyldighetsperiode": {
+        "slutt": "2017-06-04T19:53:36.831Z",
+        "start": "2017-06-04T19:53:36.831Z"
+      },
+      "kontaktinformasjon": {
+        "epostadresse": "post@haugfk.no",
+        "mobiltelefonummer": "47474747",
+        "nettsted": "http://www.haugfk.no",
+        "sip": "kundesenter@haugfk.no",
+        "telefonnummer": "52525252"
+      },
+      "kortnavn": "Sundet vgs",
+      "navn": "Sundet videregående skole",
+      "organisasjonsId": {
+        "identifikatorverdi": "560000"
+      },
+      "organisasjonsKode": {
+        "gyldighetsperiode": {
+          "slutt": "2017-06-04T19:53:36.831Z",
+          "start": "2017-06-04T19:53:36.831Z"
+        },
+        "identifikatorverdi": "SUNDETVGS"
+      },
+      "organisasjonsnavn": "Sundet videregåendeskole",
+      "organisasjonsnummer": {
+        "identifikatorverdi": "970123458"
+      },
+      "postadresse": {
+        "adresse": "PB 69",
+        "postnummer": "5501",
+        "poststed": "Haugesund"
+      }
+    },
+    "relatedToEmploymentNr": [
+      "100002",
+      "100003",
+      "100004"
+    ],
+    "relatedToOrgPartenNr": "550001"
+  }
+]

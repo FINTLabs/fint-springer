@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import no.fint.model.administrasjon.organisasjon.Organisasjonselement;
 import org.springframework.data.annotation.Id;
 
+import java.util.List;
+
 @Data
 @EqualsAndHashCode
 @NoArgsConstructor
@@ -16,7 +18,7 @@ public class Organisation {
     @Id
     private String id;
     private Organisasjonselement organisation;
-    private String relatedToEmploymentNr;
+    private List<String> relatedToEmploymentNr;
     private String relatedToOrgPartenNr;
-    private String relatedToOrgChildNr;
+    private List<String> relatedToOrgChildNr;
 }

@@ -1,0 +1,20 @@
+[
+  {
+    "functionCode": {
+      "gyldighetsperiode": {
+        "slutt": "2017-06-05T14:35:49.879Z",
+        "start": "2017-06-05T14:35:49.879Z"
+      },
+      "kode": "string",
+      "navn": "string",
+      "systemId": {
+        "gyldighetsperiode": {
+          "slutt": "2017-06-05T14:35:49.880Z",
+          "start": "2017-06-05T14:35:49.880Z"
+        },
+        "identifikatorverdi": "string"
+      }
+    },
+    "id": "string"
+  }
+]

@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import no.fint.model.administrasjon.personal.Personalressurs;
 import org.springframework.data.annotation.Id;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,5 +19,5 @@ public class Employee {
     private String id;
     private Personalressurs employee;
     private String relatedToPersonNr;
-    private String relatedToEmploymentNr;
+    private List<String> relatedToEmploymentNr;
 }
