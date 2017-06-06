@@ -16,7 +16,7 @@
       }
     },
     "relatedToEmployeeNr": "100000",
-    "relatedToOrgId": "string"
+    "relatedToOrgId": "550001"
   },
   {
     "employment": {
@@ -35,7 +35,7 @@
       }
     },
     "relatedToEmployeeNr": "100001",
-    "relatedToOrgId": "string"
+    "relatedToOrgId": "550001"
   },
   {
     "employment": {
@@ -54,7 +54,7 @@
       }
     },
     "relatedToEmployeeNr": "100002",
-    "relatedToOrgId": "string"
+    "relatedToOrgId": "560000"
   },
   {
     "employment": {
@@ -73,7 +73,7 @@
       }
     },
     "relatedToEmployeeNr": "100003",
-    "relatedToOrgId": "string"
+    "relatedToOrgId": "560000"
   },
   {
     "employment": {
@@ -92,6 +92,6 @@
       }
     },
     "relatedToEmployeeNr": "100004",
-    "relatedToOrgId": "string"
+    "relatedToOrgId": "560000"
   }
 ]
