@@ -41,13 +41,13 @@ services:
    networks:
     - fint_springer
 
-  adapter:
+  adapter-personal:
    image: fint/springer-adapter:latest
    ports:
      - "9003:8080"
    environment:
     TZ: Europe/Oslo
-    springfox.title: "FINT Springer Adapter"
+    springfox.title: "FINT Springer Adapter Personal"
    deploy:
     placement:
      constraints:

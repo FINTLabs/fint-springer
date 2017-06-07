@@ -35,7 +35,7 @@ public class ExampleDataLoader {
 
     private ResourceLoader resourceLoader;
 
-    @PostConstruct
+    //@PostConstruct
     public void init() throws IOException, URISyntaxException {
         mongoTemplate.getDb().dropDatabase();
 
