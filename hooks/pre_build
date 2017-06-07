@@ -2,4 +2,4 @@
 
 echo "=> Building the binary"
 
-docker run --rm -v "$PWD":/project -w /project openjdk:alpine ./gradlew build
+docker run --rm -v "$PWD":/fint-springer -w /fint-springer openjdk:alpine ./gradlew build
