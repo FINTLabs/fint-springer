@@ -58,7 +58,9 @@
         "identifikatorverdi": "D93DE741-FD6E-4DD4-BF5C-7398CECF3712"
       }
     },
-    "relatedToEmploymentNr": ["100001:1"],
+    "relatedToEmploymentNr": [
+      "100001:1"
+    ],
     "relatedToPersonNr": "01116423456"
   },
   {
@@ -87,7 +89,9 @@
         "identifikatorverdi": "0385AC48-342D-430B-97C4-2059FD7213D7"
       }
     },
-    "relatedToEmploymentNr": ["100002:1"],
+    "relatedToEmploymentNr": [
+      "100002:1"
+    ],
     "relatedToPersonNr": "12077134567"
   },
   {
@@ -116,7 +120,9 @@
         "identifikatorverdi": "B3B2A996-BD1E-4058-9B69-94B0FD9F75C5"
       }
     },
-    "relatedToEmploymentNr": ["100003:1"],
+    "relatedToEmploymentNr": [
+      "100003:1"
+    ],
     "relatedToPersonNr": "16055445678"
   },
   {
@@ -145,7 +151,10 @@
         "identifikatorverdi": "70F3F121-C7CF-42D8-8311-9A5FF0AB090B"
       }
     },
-    "relatedToEmploymentNr": ["100004:1"],
+    "relatedToEmploymentNr": [
+      "100004:1",
+      "100004:2"
+    ],
     "relatedToPersonNr": "12018156789"
   }
 ]

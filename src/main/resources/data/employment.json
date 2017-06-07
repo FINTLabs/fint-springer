@@ -93,5 +93,24 @@
     },
     "relatedToEmployeeNr": "100004",
     "relatedToOrgId": "560000"
+  },
+  {
+    "employment": {
+      "ansettelsesprosent": 100.0,
+      "arslonn": 571000.0,
+      "gyldighetsperiode": {
+        "slutt": "2017-06-04T19:53:36.634Z",
+        "start": "2017-06-04T19:53:36.634Z"
+      },
+      "hovedstilling": true,
+      "lonnsprosent": 100,
+      "stillingsnummer": "2",
+      "stillingstittel": "string",
+      "systemId": {
+        "identifikatorverdi": "100004:2"
+      }
+    },
+    "relatedToEmployeeNr": "100004",
+    "relatedToOrgId": "550001"
   }
 ]
