@@ -17,6 +17,7 @@ import javax.annotation.PostConstruct;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Collection;
@@ -149,7 +150,8 @@ public class ExampleDataLoader {
 
 
     private File getFile(String file) throws URISyntaxException {
-        return new File(ClassLoader.getSystemResource(String.format("data/%s", file)).toURI());
+        URL resource = ExampleDataLoader.class.getResource(String.format("/data/%s", file));
+        return new File(resource.toURI());
     }
 
 

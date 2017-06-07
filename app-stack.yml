@@ -1,16 +1,18 @@
 version: '3'
 
 services:
-  provider:
+  springer:
    image: fint/springer:latest
    ports:
      - "9002:8080"
    environment:
     TZ: Europe/Oslo
-    server.context-path: /
     springfox.title: "FINT Springer"
     spring.data.mongodb.uri: mongodb://db:27017/springer
    deploy:
+    placement:
+     constraints:
+      - node.role == worker
     replicas: 1
     restart_policy:
      condition: on-failure
@@ -23,18 +25,39 @@ services:
     - db
 
   db:
-    image: mongo:3.4.4
-    environment:
-      TZ: Europe/Oslo
-    deploy:
-     replicas: 1
-     restart_policy:
-      condition: on-failure
-      delay: 5s
-      max_attempts: 3
-      window: 120s
-    networks:
-     - fint_springer
+   image: mongo:3.4.4
+   environment:
+    TZ: Europe/Oslo
+   deploy:
+    placement:
+     constraints:
+      - node.role == worker
+    replicas: 1
+    restart_policy:
+     condition: on-failure
+     delay: 5s
+     max_attempts: 3
+     window: 120s
+   networks:
+    - fint_springer
+
+  adapter:
+   image: fint/springer-adapter:latest
+   ports:
+     - "9003:8080"
+   environment:
+    TZ: Europe/Oslo
+    springfox.title: "FINT Springer Adapter"
+   deploy:
+    placement:
+     constraints:
+      - node.role == worker
+    replicas: 1
+    restart_policy:
+     condition: on-failure
+     delay: 5s
+     max_attempts: 3
+     window: 120s
 
 networks:
  fint_springer:
