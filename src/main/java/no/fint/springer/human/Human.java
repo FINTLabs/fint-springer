@@ -16,6 +16,7 @@ public class Human {
     private String id;
     private Person person;
     private String relatedToEmployeeNr;
+    private String gender;
 }
 
 

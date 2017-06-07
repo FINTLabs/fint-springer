@@ -25,7 +25,8 @@
         "poststed": "Haugesund"
       }
     },
-    "relatedToEmployeeNr": "100000"
+    "relatedToEmployeeNr": "100000",
+    "gender": "1"
   },
   {
     "person": {
@@ -52,7 +53,8 @@
         "poststed": "Haugesund"
       }
     },
-    "relatedToEmployeeNr": "100001"
+    "relatedToEmployeeNr": "100001",
+    "gender": "2"
   },
   {
     "person": {
@@ -80,7 +82,8 @@
         "poststed": "Haugesund"
       }
     },
-    "relatedToEmployeeNr": "100002"
+    "relatedToEmployeeNr": "100002",
+    "gender": "1"
   },
   {
     "person": {
@@ -108,7 +111,8 @@
         "poststed": "Hervik"
       }
     },
-    "relatedToEmployeeNr": "100004"
+    "relatedToEmployeeNr": "100004",
+    "gender": "2"
   },
   {
     "person": {
@@ -135,6 +139,7 @@
         "poststed": "Kopervik"
       }
     },
-    "relatedToEmployeeNr": "100004"
+    "relatedToEmployeeNr": "100004",
+    "gender": "2"
   }
 ]
