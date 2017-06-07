@@ -2,6 +2,7 @@ package no.fint.springer.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.io.Resources;
 import lombok.extern.slf4j.Slf4j;
 import no.fint.springer.codelist.*;
 import no.fint.springer.employee.Employee;
@@ -18,8 +19,6 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
@@ -38,21 +37,6 @@ public class ExampleDataLoader {
     //@PostConstruct
     public void init() throws IOException, URISyntaxException {
         mongoTemplate.getDb().dropDatabase();
-
-        /*
-        File[] files = new File(ClassLoader.getSystemResource("data").toURI()).listFiles();
-
-        Arrays.stream(files).forEach(file -> {
-            String resourceName = file.getName().split("\\.")[0];
-            try {
-                loadResources(resourceName);
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (URISyntaxException e) {
-                e.printStackTrace();
-            }
-        });
-        */
 
         loadResourcesHuman();
         loadResourcesEmployee();
@@ -91,7 +75,7 @@ public class ExampleDataLoader {
         log.info("Loading '{}' example data", "hoursperweekcode");
     }
 
-    private void loadResourcesFunctioncode() throws URISyntaxException, IOException{
+    private void loadResourcesFunctioncode() throws URISyntaxException, IOException {
         Collection<FunctionCode> functionCodes = objectMapper.readValue(getFile(String.format("functioncode.json")), new TypeReference<List<FunctionCode>>() {
         });
 
@@ -99,7 +83,7 @@ public class ExampleDataLoader {
         log.info("Loading '{}' example data", "functioncode");
     }
 
-    private void loadResourcesEmployeementtype() throws URISyntaxException, IOException{
+    private void loadResourcesEmployeementtype() throws URISyntaxException, IOException {
         Collection<EmployeementType> employeementTypes = objectMapper.readValue(getFile(String.format("employeementtype.json")), new TypeReference<List<EmployeementType>>() {
         });
 
@@ -107,7 +91,7 @@ public class ExampleDataLoader {
         log.info("Loading '{}' example data", "employeementtype");
     }
 
-    private void loadResourcesEmployeecode() throws URISyntaxException, IOException{
+    private void loadResourcesEmployeecode() throws URISyntaxException, IOException {
         Collection<Employeecode> employeecodes = objectMapper.readValue(getFile(String.format("employeecode.json")), new TypeReference<List<Employeecode>>() {
         });
 
@@ -115,7 +99,7 @@ public class ExampleDataLoader {
         log.info("Loading '{}' example data", "employeecode");
     }
 
-    private void loadResourcesOrganisation() throws URISyntaxException, IOException{
+    private void loadResourcesOrganisation() throws URISyntaxException, IOException {
         Collection<Organisation> organisations = objectMapper.readValue(getFile(String.format("organisation.json")), new TypeReference<List<Organisation>>() {
         });
 
@@ -123,7 +107,7 @@ public class ExampleDataLoader {
         log.info("Loading '{}' example data", "organisation");
     }
 
-    private void loadResourcesEmployment() throws URISyntaxException, IOException{
+    private void loadResourcesEmployment() throws URISyntaxException, IOException {
         Collection<Employment> employments = objectMapper.readValue(getFile(String.format("employment.json")), new TypeReference<List<Employment>>() {
         });
 
@@ -131,7 +115,7 @@ public class ExampleDataLoader {
         log.info("Loading '{}' example data", "employment");
     }
 
-    private void loadResourcesEmployee() throws URISyntaxException, IOException{
+    private void loadResourcesEmployee() throws URISyntaxException, IOException {
         Collection<Employee> employees = objectMapper.readValue(getFile(String.format("employee.json")), new TypeReference<List<Employee>>() {
         });
 
@@ -139,7 +123,7 @@ public class ExampleDataLoader {
         log.info("Loading '{}' example data", "employee");
     }
 
-    private void loadResourcesHuman() throws URISyntaxException, IOException{
+    private void loadResourcesHuman() throws URISyntaxException, IOException {
         Collection<Human> humans = objectMapper.readValue(getFile(String.format("human.json")), new TypeReference<List<Human>>() {
         });
 
@@ -148,9 +132,9 @@ public class ExampleDataLoader {
     }
 
 
-
     private File getFile(String file) throws URISyntaxException {
-        URL resource = ExampleDataLoader.class.getResource(String.format("/data/%s", file));
+
+        URL resource = Resources.getResource(ExampleDataLoader.class, String.format("/data/%s", file));
         return new File(resource.toURI());
     }
 
