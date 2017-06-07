@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.PostConstruct;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Collection;
@@ -126,16 +127,13 @@ public class ExampleDataLoader {
     private void loadResourcesHuman() throws URISyntaxException, IOException {
         Collection<Human> humans = objectMapper.readValue(getFile(String.format("human.json")), new TypeReference<List<Human>>() {
         });
-
         mongoTemplate.insert(humans, "human");
         log.info("Loading '{}' example data", "Human");
     }
 
 
-    private File getFile(String file) throws URISyntaxException {
-
-        URL resource = Resources.getResource(ExampleDataLoader.class, String.format("/data/%s", file));
-        return new File(resource.toURI());
+    private InputStream getFile(String file) throws URISyntaxException {
+        return ExampleDataLoader.class.getResourceAsStream(String.format("/data/%s", file));
     }
 
 
