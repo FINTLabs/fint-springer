@@ -4,8 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import no.fint.model.administrasjon.kodeverk.Arbeidsforholdstype;
-import no.fint.model.administrasjon.kodeverk.Stillingskode;
+import no.fint.model.administrasjon.kodeverk.Arbeidforholdstype;
 import org.springframework.data.annotation.Id;
 
 @Data
@@ -16,5 +15,5 @@ public class EmployeementType {
 
     @Id
     private String id;
-    private Arbeidsforholdstype employeementType;
+    private Arbeidforholdstype employeementType;
 }
