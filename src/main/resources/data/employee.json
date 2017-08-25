@@ -6,12 +6,12 @@
       },
       "ansettelsesperiode": {
         "start": "2010-06-04T00:00:00Z",
-        "slutt": "2099-31-12T00:00:00Z"
+        "slutt": "2099-12-31T00:00:00Z"
       },
       "brukernavn": {
         "gyldighetsperiode": {
           "start": "2010-06-04T00:00:00Z",
-          "slutt": "2099-31-12T00:00:00Z"
+          "slutt": "2099-12-31T00:00:00Z"
         },
         "identifikatorverdi": "hsund"
       },
@@ -38,12 +38,12 @@
       },
       "ansettelsesperiode": {
         "start": "2010-06-04T00:00:00Z",
-        "slutt": "2099-31-12T00:00:00Z"
+        "slutt": "2099-12-31T00:00:00Z"
       },
       "brukernavn": {
         "gyldighetsperiode": {
           "start": "2010-06-04T00:00:00Z",
-          "slutt": "2099-31-12T00:00:00Z"
+          "slutt": "2099-12-31T00:00:00Z"
         },
         "identifikatorverdi": "khaug"
       },
@@ -70,12 +70,12 @@
       },
       "ansettelsesperiode": {
         "start": "2010-06-04T00:00:00Z",
-        "slutt": "2099-31-12T00:00:00Z"
+        "slutt": "2099-12-31T00:00:00Z"
       },
       "brukernavn": {
         "gyldighetsperiode": {
           "start": "2010-06-04T00:00:00Z",
-          "slutt": "2099-31-12T00:00:00Z"
+          "slutt": "2099-12-31T00:00:00Z"
         },
         "identifikatorverdi": "kegudnersen"
       },
@@ -101,12 +101,12 @@
       },
       "ansettelsesperiode": {
         "start": "2010-06-04T00:00:00Z",
-        "slutt": "2099-31-12T00:00:00Z"
+        "slutt": "2099-12-31T00:00:00Z"
       },
       "brukernavn": {
         "gyldighetsperiode": {
           "start": "2010-06-04T00:00:00Z",
-          "slutt": "2099-31-12T00:00:00Z"
+          "slutt": "2099-12-31T00:00:00Z"
         },
         "identifikatorverdi": "gharaldseid"
       },
@@ -132,12 +132,12 @@
       },
       "ansettelsesperiode": {
         "start": "2010-06-04T00:00:00Z",
-        "slutt": "2099-31-12T00:00:00Z"
+        "slutt": "2099-12-31T00:00:00Z"
       },
       "brukernavn": {
         "gyldighetsperiode": {
           "start": "2010-06-04T00:00:00Z",
-          "slutt": "2099-31-12T00:00:00Z"
+          "slutt": "2099-12-31T00:00:00Z"
         },
         "identifikatorverdi": "ctollaksen"
       },
