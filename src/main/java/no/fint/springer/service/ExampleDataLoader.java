@@ -53,7 +53,7 @@ public class ExampleDataLoader {
     }
 
     private void loadResourcesResponsibilitycode() throws URISyntaxException, IOException {
-        Collection<ResponsibilityCode> responsibilityCodes = objectMapper.readValue(getFile(String.format("responsibilitycode.json")), new TypeReference<List<ResponsibilityCode>>() {
+        Collection<ResponsibilityCode> responsibilityCodes = objectMapper.readValue(getFile("responsibilitycode.json"), new TypeReference<List<ResponsibilityCode>>() {
         });
 
         mongoTemplate.insert(responsibilityCodes, "responsibilitycode");
@@ -61,7 +61,7 @@ public class ExampleDataLoader {
     }
 
     private void loadResourcesPersonalresourcecategory() throws URISyntaxException, IOException {
-        Collection<PersonalResourceCategory> personalResourceCategories = objectMapper.readValue(getFile(String.format("personalresourcecategory.json")), new TypeReference<List<PersonalResourceCategory>>() {
+        Collection<PersonalResourceCategory> personalResourceCategories = objectMapper.readValue(getFile("personalresourcecategory.json"), new TypeReference<List<PersonalResourceCategory>>() {
         });
 
         mongoTemplate.insert(personalResourceCategories, "personalresourcecategory");
@@ -69,7 +69,7 @@ public class ExampleDataLoader {
     }
 
     private void loadResourcesHoursperweekcode() throws URISyntaxException, IOException {
-        Collection<HoursPerWeekCode> hoursPerWeekCodes = objectMapper.readValue(getFile(String.format("hoursperweekcode.json")), new TypeReference<List<HoursPerWeekCode>>() {
+        Collection<HoursPerWeekCode> hoursPerWeekCodes = objectMapper.readValue(getFile("hoursperweekcode.json"), new TypeReference<List<HoursPerWeekCode>>() {
         });
 
         mongoTemplate.insert(hoursPerWeekCodes, "hoursperweekcode");
@@ -77,7 +77,7 @@ public class ExampleDataLoader {
     }
 
     private void loadResourcesFunctioncode() throws URISyntaxException, IOException {
-        Collection<FunctionCode> functionCodes = objectMapper.readValue(getFile(String.format("functioncode.json")), new TypeReference<List<FunctionCode>>() {
+        Collection<FunctionCode> functionCodes = objectMapper.readValue(getFile("functioncode.json"), new TypeReference<List<FunctionCode>>() {
         });
 
         mongoTemplate.insert(functionCodes, "functioncode");
@@ -85,7 +85,7 @@ public class ExampleDataLoader {
     }
 
     private void loadResourcesEmployeementtype() throws URISyntaxException, IOException {
-        Collection<EmployeementType> employeementTypes = objectMapper.readValue(getFile(String.format("employeementtype.json")), new TypeReference<List<EmployeementType>>() {
+        Collection<EmployeementType> employeementTypes = objectMapper.readValue(getFile("employeementtype.json"), new TypeReference<List<EmployeementType>>() {
         });
 
         mongoTemplate.insert(employeementTypes, "employeementtype");
@@ -93,7 +93,7 @@ public class ExampleDataLoader {
     }
 
     private void loadResourcesEmployeecode() throws URISyntaxException, IOException {
-        Collection<Employeecode> employeecodes = objectMapper.readValue(getFile(String.format("employeecode.json")), new TypeReference<List<Employeecode>>() {
+        Collection<Employeecode> employeecodes = objectMapper.readValue(getFile("employeecode.json"), new TypeReference<List<Employeecode>>() {
         });
 
         mongoTemplate.insert(employeecodes, "employeecode");
@@ -101,7 +101,7 @@ public class ExampleDataLoader {
     }
 
     private void loadResourcesOrganisation() throws URISyntaxException, IOException {
-        Collection<Organisation> organisations = objectMapper.readValue(getFile(String.format("organisation.json")), new TypeReference<List<Organisation>>() {
+        Collection<Organisation> organisations = objectMapper.readValue(getFile("organisation.json"), new TypeReference<List<Organisation>>() {
         });
 
         mongoTemplate.insert(organisations, "organisation");
@@ -109,7 +109,7 @@ public class ExampleDataLoader {
     }
 
     private void loadResourcesEmployment() throws URISyntaxException, IOException {
-        Collection<Employment> employments = objectMapper.readValue(getFile(String.format("employment.json")), new TypeReference<List<Employment>>() {
+        Collection<Employment> employments = objectMapper.readValue(getFile("employment.json"), new TypeReference<List<Employment>>() {
         });
 
         mongoTemplate.insert(employments, "employment");
@@ -117,7 +117,7 @@ public class ExampleDataLoader {
     }
 
     private void loadResourcesEmployee() throws URISyntaxException, IOException {
-        Collection<Employee> employees = objectMapper.readValue(getFile(String.format("employee.json")), new TypeReference<List<Employee>>() {
+        Collection<Employee> employees = objectMapper.readValue(getFile("employee.json"), new TypeReference<List<Employee>>() {
         });
 
         mongoTemplate.insert(employees, "employee");
@@ -125,7 +125,7 @@ public class ExampleDataLoader {
     }
 
     private void loadResourcesHuman() throws URISyntaxException, IOException {
-        Collection<Human> humans = objectMapper.readValue(getFile(String.format("human.json")), new TypeReference<List<Human>>() {
+        Collection<Human> humans = objectMapper.readValue(getFile("human.json"), new TypeReference<List<Human>>() {
         });
         mongoTemplate.insert(humans, "human");
         log.info("Loading '{}' example data", "Human");
