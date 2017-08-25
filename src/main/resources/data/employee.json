@@ -5,13 +5,13 @@
         "identifikatorverdi": "100000"
       },
       "ansettelsesperiode": {
-        "start": "2010-06-04T00:00:00.000Z",
-        "slutt": "2099-31-12T00:00:00.000Z"
+        "start": "2010-06-04T00:00:00Z",
+        "slutt": "2099-31-12T00:00:00Z"
       },
       "brukernavn": {
         "gyldighetsperiode": {
-          "start": "2010-06-04T00:00:00.000ZZ",
-          "slutt": "2099-31-12T00:00:00.000Z"
+          "start": "2010-06-04T00:00:00Z",
+          "slutt": "2099-31-12T00:00:00Z"
         },
         "identifikatorverdi": "hsund"
       },
@@ -37,13 +37,13 @@
         "identifikatorverdi": "100001"
       },
       "ansettelsesperiode": {
-        "start": "2010-06-04T00:00:00.000Z",
-        "slutt": "2099-31-12T00:00:00.000Z"
+        "start": "2010-06-04T00:00:00Z",
+        "slutt": "2099-31-12T00:00:00Z"
       },
       "brukernavn": {
         "gyldighetsperiode": {
-          "start": "2010-06-04T00:00:00.000ZZ",
-          "slutt": "2099-31-12T00:00:00.000Z"
+          "start": "2010-06-04T00:00:00Z",
+          "slutt": "2099-31-12T00:00:00Z"
         },
         "identifikatorverdi": "khaug"
       },
@@ -69,13 +69,13 @@
         "identifikatorverdi": "100002"
       },
       "ansettelsesperiode": {
-        "start": "2010-06-04T00:00:00.000Z",
-        "slutt": "2099-31-12T00:00:00.000Z"
+        "start": "2010-06-04T00:00:00Z",
+        "slutt": "2099-31-12T00:00:00Z"
       },
       "brukernavn": {
         "gyldighetsperiode": {
-          "start": "2010-06-04T00:00:00.000ZZ",
-          "slutt": "2099-31-12T00:00:00.000Z"
+          "start": "2010-06-04T00:00:00Z",
+          "slutt": "2099-31-12T00:00:00Z"
         },
         "identifikatorverdi": "kegudnersen"
       },
@@ -100,13 +100,13 @@
         "identifikatorverdi": "100003"
       },
       "ansettelsesperiode": {
-        "start": "2010-06-04T00:00:00.000Z",
-        "slutt": "2099-31-12T00:00:00.000Z"
+        "start": "2010-06-04T00:00:00Z",
+        "slutt": "2099-31-12T00:00:00Z"
       },
       "brukernavn": {
         "gyldighetsperiode": {
-          "start": "2010-06-04T00:00:00.000ZZ",
-          "slutt": "2099-31-12T00:00:00.000Z"
+          "start": "2010-06-04T00:00:00Z",
+          "slutt": "2099-31-12T00:00:00Z"
         },
         "identifikatorverdi": "gharaldseid"
       },
@@ -131,13 +131,13 @@
         "identifikatorverdi": "100004"
       },
       "ansettelsesperiode": {
-        "start": "2010-06-04T00:00:00.000Z",
-        "slutt": "2099-31-12T00:00:00.000Z"
+        "start": "2010-06-04T00:00:00Z",
+        "slutt": "2099-31-12T00:00:00Z"
       },
       "brukernavn": {
         "gyldighetsperiode": {
-          "start": "2010-06-04T00:00:00.000ZZ",
-          "slutt": "2099-31-12T00:00:00.000Z"
+          "start": "2010-06-04T00:00:00Z",
+          "slutt": "2099-31-12T00:00:00Z"
         },
         "identifikatorverdi": "ctollaksen"
       },
