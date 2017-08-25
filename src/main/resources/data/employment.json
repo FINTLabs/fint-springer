@@ -12,7 +12,7 @@
       "stillingsnummer": "1",
       "stillingstittel": "string",
       "systemId": {
-        "identifikatorverdi": "100000:1"
+        "identifikatorverdi": "100000_1"
       }
     },
     "relatedToEmployeeNr": "100000",
@@ -31,7 +31,7 @@
       "stillingsnummer": "1",
       "stillingstittel": "string",
       "systemId": {
-        "identifikatorverdi": "100001:1"
+        "identifikatorverdi": "100001_1"
       }
     },
     "relatedToEmployeeNr": "100001",
@@ -50,7 +50,7 @@
       "stillingsnummer": "1",
       "stillingstittel": "string",
       "systemId": {
-        "identifikatorverdi": "100002:1"
+        "identifikatorverdi": "100002_1"
       }
     },
     "relatedToEmployeeNr": "100002",
@@ -69,7 +69,7 @@
       "stillingsnummer": "1",
       "stillingstittel": "string",
       "systemId": {
-        "identifikatorverdi": "100003:1"
+        "identifikatorverdi": "100003_1"
       }
     },
     "relatedToEmployeeNr": "100003",
@@ -88,7 +88,7 @@
       "stillingsnummer": "1",
       "stillingstittel": "string",
       "systemId": {
-        "identifikatorverdi": "100004:1"
+        "identifikatorverdi": "100004_1"
       }
     },
     "relatedToEmployeeNr": "100004",
@@ -107,7 +107,7 @@
       "stillingsnummer": "2",
       "stillingstittel": "string",
       "systemId": {
-        "identifikatorverdi": "100004:2"
+        "identifikatorverdi": "100004_2"
       }
     },
     "relatedToEmployeeNr": "100004",

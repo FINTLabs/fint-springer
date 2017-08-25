@@ -27,7 +27,7 @@
       }
     },
     "relatedToEmploymentNr": [
-      "100000:1"
+      "100000_1"
     ],
     "relatedToPersonNr": "22057812345"
   },
@@ -59,7 +59,7 @@
       }
     },
     "relatedToEmploymentNr": [
-      "100001:1"
+      "100001_1"
     ],
     "relatedToPersonNr": "01116423456"
   },
@@ -90,7 +90,7 @@
       }
     },
     "relatedToEmploymentNr": [
-      "100002:1"
+      "100002_1"
     ],
     "relatedToPersonNr": "12077134567"
   },
@@ -121,7 +121,7 @@
       }
     },
     "relatedToEmploymentNr": [
-      "100003:1"
+      "100003_1"
     ],
     "relatedToPersonNr": "16055445678"
   },
@@ -152,8 +152,8 @@
       }
     },
     "relatedToEmploymentNr": [
-      "100004:1",
-      "100004:2"
+      "100004_1",
+      "100004_2"
     ],
     "relatedToPersonNr": "12018156789"
   }
