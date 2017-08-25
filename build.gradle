@@ -41,7 +41,7 @@ dependencies {
 
     compile("io.springfox:springfox-data-rest:2.7.0")
 
-    compile('no.fint:fint-administrasjon-model-java:1.1.0-rc.1.6')
+    compile('no.fint:fint-administrasjon-model-java:1.1.0-rc.1.7')
 
 
     compileOnly('org.projectlombok:lombok')
