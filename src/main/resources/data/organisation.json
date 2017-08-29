@@ -138,6 +138,86 @@
       "100003",
       "100004"
     ],
+    "relatedToOrgChildNr": [
+      "561000",
+      "562000"
+    ],
     "relatedToOrgPartenNr": "550001"
+  },
+  {
+    "organisation": {
+      "forretningsadresse": {
+        "adresse": "Marilyn Monroe 1",
+        "postnummer": "5520",
+        "poststed": "Haugesund"
+      },
+      "gyldighetsperiode": {
+        "start": "2017-06-04T19:53:36.831Z"
+      },
+      "kontaktinformasjon": {
+        "epostadresse": "post@haugfk.no",
+        "mobiltelefonnummer": "47474747",
+        "nettsted": "http://www.haugfk.no",
+        "sip": "kundesenter@haugfk.no",
+        "telefonnummer": "52525252"
+      },
+      "kortnavn": "Drift og miljø",
+      "navn": "Avdeling for drift og miljø",
+      "organisasjonsId": {
+        "identifikatorverdi": "561000"
+      },
+      "organisasjonsKode": {
+        "gyldighetsperiode": {
+          "start": "2017-06-04T19:53:36.831Z"
+        },
+        "identifikatorverdi": "SVG-DM"
+      },      
+      "postadresse": {
+        "adresse": "PB 69",
+        "postnummer": "5501",
+        "poststed": "Haugesund"
+      }
+    },
+    "relatedToEmploymentNr": [
+    ],
+    "relatedToOrgPartenNr": "560000"
+  },
+  {
+    "organisation": {
+      "forretningsadresse": {
+        "adresse": "Marilyn Monroe 1",
+        "postnummer": "5520",
+        "poststed": "Haugesund"
+      },
+      "gyldighetsperiode": {
+        "start": "2017-06-04T19:53:36.831Z"
+      },
+      "kontaktinformasjon": {
+        "epostadresse": "post@haugfk.no",
+        "mobiltelefonnummer": "47474747",
+        "nettsted": "http://www.haugfk.no",
+        "sip": "kundesenter@haugfk.no",
+        "telefonnummer": "52525252"
+      },
+      "kortnavn": "Fellesfag",
+      "navn": "Avdeling for fellesfag",
+      "organisasjonsId": {
+        "identifikatorverdi": "562000"
+      },
+      "organisasjonsKode": {
+        "gyldighetsperiode": {
+          "start": "2017-06-04T19:53:36.831Z"
+        },
+        "identifikatorverdi": "SVG-FF"
+      },      
+      "postadresse": {
+        "adresse": "PB 69",
+        "postnummer": "5501",
+        "poststed": "Haugesund"
+      }
+    },
+    "relatedToEmploymentNr": [
+    ],
+    "relatedToOrgPartenNr": "560000"
   }
 ]
