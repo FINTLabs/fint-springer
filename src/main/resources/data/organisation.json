@@ -257,5 +257,43 @@
     "relatedToEmploymentNr": [
     ],
     "relatedToOrgPartenNr": "560000"
+  },
+  {
+    "organisation": {
+      "forretningsadresse": {
+        "adresse": "Marilyn Monroe 1",
+        "postnummer": "5520",
+        "poststed": "Haugesund"
+      },
+      "gyldighetsperiode": {
+        "start": "2017-06-04T19:53:36.831Z"
+      },
+      "kontaktinformasjon": {
+        "epostadresse": "post@haugfk.no",
+        "mobiltelefonnummer": "47474747",
+        "nettsted": "http://www.haugfk.no",
+        "sip": "kundesenter@haugfk.no",
+        "telefonnummer": "52525252"
+      },
+      "kortnavn": "Helsefag",
+      "navn": "Avdeling for helsefag",
+      "organisasjonsId": {
+        "identifikatorverdi": "568000"
+      },
+      "organisasjonsKode": {
+        "gyldighetsperiode": {
+          "start": "2017-06-04T19:53:36.831Z"
+        },
+        "identifikatorverdi": "SVG-HE"
+      },      
+      "postadresse": {
+        "adresse": "PB 69",
+        "postnummer": "5501",
+        "poststed": "Haugesund"
+      }
+    },
+    "relatedToEmploymentNr": [
+    ],
+    "relatedToOrgPartenNr": "560000"
   }
 ]
