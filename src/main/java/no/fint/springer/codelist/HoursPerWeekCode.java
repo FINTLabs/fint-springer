@@ -16,5 +16,5 @@ public class HoursPerWeekCode {
 
     @Id
     private String id;
-    private TimerPerUkeKode hoursPerWeekCode;
+    private TimerPerUkeKode hoursperweekcode;
 }
