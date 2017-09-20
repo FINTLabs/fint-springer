@@ -14,7 +14,8 @@
         },
         "identifikatorverdi": "35,5"
       }
-    }
+    },
+    "id": "1"
   },
   {
     "hoursPerWeekCode": {
@@ -31,7 +32,8 @@
         },
         "identifikatorverdi": "36,0"
       }
-    }
+    },
+    "id": "2"
   },
   {
     "hoursPerWeekCode": {
@@ -48,6 +50,7 @@
         },
         "identifikatorverdi": "37,5"
       }
-    }
+    },
+    "id": "3"
   }
 ]
