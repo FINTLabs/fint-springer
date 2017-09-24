@@ -1,6 +1,6 @@
 # FINT Springer
 
-https://travis-ci.org/FINTprosjektet/fint-springer.svg?branch=master
+[![Build Status](https://travis-ci.org/FINTprosjektet/fint-springer.svg?branch=master)](https://travis-ci.org/FINTprosjektet/fint-springer)
 
 ## Add more data
 
