@@ -4,17 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import no.fint.model.administrasjon.kodeverk.Stillingskode;
-import no.fint.model.administrasjon.kodeverk.TimerPerUkeKode;
+import no.fint.model.administrasjon.kodeverk.Personalressurskategori;
 import org.springframework.data.annotation.Id;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-public class HoursPerWeekCode {
-
+public class Personalresourcecategory {
     @Id
     private String id;
-    private TimerPerUkeKode hoursperweekcode;
+    private Personalressurskategori personalResourceCategory;
 }

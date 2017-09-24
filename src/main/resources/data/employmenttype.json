@@ -1,6 +1,6 @@
 [
   {
-    "employeementType": {
+    "employmentType": {
       "gyldighetsperiode": {
         "slutt": "2017-06-05T14:21:58.296Z",
         "start": "2017-06-05T14:21:58.296Z"
@@ -15,7 +15,7 @@
         "identifikatorverdi": "A"
       }
     },
-    "employeementType": {
+    "employmentType": {
       "gyldighetsperiode": {
         "slutt": "2017-06-05T14:21:58.296Z",
         "start": "2017-06-05T14:21:58.296Z"
@@ -30,7 +30,7 @@
         "identifikatorverdi": "B"
       }
     },
-    "employeementType": {
+    "employmentType": {
       "gyldighetsperiode": {
         "slutt": "2017-06-05T14:21:58.296Z",
         "start": "2017-06-05T14:21:58.296Z"

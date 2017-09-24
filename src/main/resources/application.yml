@@ -3,6 +3,9 @@ springfox:
  title: 'fint-springer'
 
 spring:
+ jackson:
+   date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
+
  data:
   mongodb:
    uri: mongodb://localhost:27017/springer

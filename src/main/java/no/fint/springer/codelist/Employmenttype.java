@@ -4,17 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import no.fint.model.administrasjon.kodeverk.Ansvar;
-import no.fint.model.administrasjon.kodeverk.Funksjon;
+import no.fint.model.administrasjon.kodeverk.Arbeidsforholdstype;
 import org.springframework.data.annotation.Id;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-public class FunctionCode {
+public class Employmenttype {
 
     @Id
     private String id;
-    private Funksjon functionCode;
+    private Arbeidsforholdstype employeementType;
 }

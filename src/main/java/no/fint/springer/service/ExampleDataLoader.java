@@ -2,25 +2,19 @@ package no.fint.springer.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.common.io.Resources;
 import lombok.extern.slf4j.Slf4j;
-import no.fint.springer.codelist.*;
-import no.fint.springer.employee.Employee;
-import no.fint.springer.employment.Employment;
-import no.fint.springer.human.Human;
-import no.fint.springer.organisation.Organisation;
+import no.fint.springer.Application;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ResourceLoader;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import javax.annotation.PostConstruct;
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URISyntaxException;
-import java.net.URL;
-import java.util.Collection;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 @Slf4j
@@ -28,113 +22,67 @@ import java.util.List;
 public class ExampleDataLoader {
 
     @Autowired
-    MongoTemplate mongoTemplate;
+    private MongoTemplate mongoTemplate;
 
     @Autowired
-    ObjectMapper objectMapper;
+    private ObjectMapper objectMapper;
 
-    private ResourceLoader resourceLoader;
-
-    //@PostConstruct
+    @PostConstruct
     public void init() throws IOException, URISyntaxException {
         mongoTemplate.getDb().dropDatabase();
-
-        loadResourcesHuman();
-        loadResourcesEmployee();
-        loadResourcesEmployment();
-        loadResourcesOrganisation();
-        loadResourcesEmployeecode();
-        loadResourcesEmployeementtype();
-        loadResourcesFunctioncode();
-        loadResourcesHoursperweekcode();
-        loadResourcesPersonalresourcecategory();
-        loadResourcesResponsibilitycode();
-
+        loadResources();
     }
 
-    private void loadResourcesResponsibilitycode() throws URISyntaxException, IOException {
-        Collection<ResponsibilityCode> responsibilityCodes = objectMapper.readValue(getFile("responsibilitycode.json"), new TypeReference<List<ResponsibilityCode>>() {
+    private void loadResources() throws IOException {
+        Resource[] resources = getResources();
+        for (Resource resource : resources) {
+            List<LinkedHashMap> values = getValuesFromFile(resources[0]);
+            String collectionName = getCollectionName(resource);
+            try {
+                Class<?> collectionClass = getCollectionClass(collectionName);
+                values.forEach(value -> insertModelValue(collectionName, collectionClass, value));
+                log.info("Loaded '{}' example data", collectionName);
+            } catch (ClassNotFoundException e) {
+                log.warn("Skipping insert into {}, model missing", collectionName);
+            }
+        }
+    }
+
+    Resource[] getResources() throws IOException {
+        PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver(this.getClass().getClassLoader());
+        return resolver.getResources("classpath*:data/*.json");
+    }
+
+    private List<LinkedHashMap> getValuesFromFile(Resource resource) throws IOException {
+        return objectMapper.readValue(resource.getFile(), new TypeReference<List<LinkedHashMap>>() {
         });
-
-        mongoTemplate.insert(responsibilityCodes, "responsibilitycode");
-        log.info("Loading '{}' example data", "responsibilitycode");
     }
 
-    private void loadResourcesPersonalresourcecategory() throws URISyntaxException, IOException {
-        Collection<PersonalResourceCategory> personalResourceCategories = objectMapper.readValue(getFile("personalresourcecategory.json"), new TypeReference<List<PersonalResourceCategory>>() {
-        });
-
-        mongoTemplate.insert(personalResourceCategories, "personalresourcecategory");
-        log.info("Loading '{}' example data", "personalresourcecategory");
+    private String getCollectionName(Resource resource) {
+        return resource.getFilename().replace(".json", "");
     }
 
-    private void loadResourcesHoursperweekcode() throws URISyntaxException, IOException {
-        Collection<HoursPerWeekCode> hoursPerWeekCodes = objectMapper.readValue(getFile("hoursperweekcode.json"), new TypeReference<List<HoursPerWeekCode>>() {
-        });
-
-        mongoTemplate.insert(hoursPerWeekCodes, "hoursperweekcode");
-        log.info("Loading '{}' example data", "hoursperweekcode");
+    private void insertModelValue(String collectionName, Class<?> clazz, LinkedHashMap value) {
+        Object obj = objectMapper.convertValue(value, clazz);
+        mongoTemplate.insert(obj, collectionName);
     }
 
-    private void loadResourcesFunctioncode() throws URISyntaxException, IOException {
-        Collection<FunctionCode> functionCodes = objectMapper.readValue(getFile("functioncode.json"), new TypeReference<List<FunctionCode>>() {
-        });
-
-        mongoTemplate.insert(functionCodes, "functioncode");
-        log.info("Loading '{}' example data", "functioncode");
+    private Class<?> getCollectionClass(String collectionName) throws ClassNotFoundException {
+        try {
+            return getClass(collectionName);
+        } catch (ClassNotFoundException e) {
+            return getCodelistClass(collectionName);
+        }
     }
 
-    private void loadResourcesEmployeementtype() throws URISyntaxException, IOException {
-        Collection<EmployeementType> employeementTypes = objectMapper.readValue(getFile("employeementtype.json"), new TypeReference<List<EmployeementType>>() {
-        });
-
-        mongoTemplate.insert(employeementTypes, "employeementtype");
-        log.info("Loading '{}' example data", "employeementtype");
+    private Class<?> getClass(String collectionName) throws ClassNotFoundException {
+        String basePackage = Application.class.getPackage().getName();
+        return Class.forName(String.format("%s.%s.%s", basePackage, collectionName, StringUtils.capitalize(collectionName)));
     }
 
-    private void loadResourcesEmployeecode() throws URISyntaxException, IOException {
-        Collection<Employeecode> employeecodes = objectMapper.readValue(getFile("employeecode.json"), new TypeReference<List<Employeecode>>() {
-        });
-
-        mongoTemplate.insert(employeecodes, "employeecode");
-        log.info("Loading '{}' example data", "employeecode");
+    private Class<?> getCodelistClass(String collectionName) throws ClassNotFoundException {
+        String basePackage = Application.class.getPackage().getName();
+        return Class.forName(String.format("%s.codelist.%s", basePackage, StringUtils.capitalize(collectionName)));
     }
-
-    private void loadResourcesOrganisation() throws URISyntaxException, IOException {
-        Collection<Organisation> organisations = objectMapper.readValue(getFile("organisation.json"), new TypeReference<List<Organisation>>() {
-        });
-
-        mongoTemplate.insert(organisations, "organisation");
-        log.info("Loading '{}' example data", "organisation");
-    }
-
-    private void loadResourcesEmployment() throws URISyntaxException, IOException {
-        Collection<Employment> employments = objectMapper.readValue(getFile("employment.json"), new TypeReference<List<Employment>>() {
-        });
-
-        mongoTemplate.insert(employments, "employment");
-        log.info("Loading '{}' example data", "employment");
-    }
-
-    private void loadResourcesEmployee() throws URISyntaxException, IOException {
-        Collection<Employee> employees = objectMapper.readValue(getFile("employee.json"), new TypeReference<List<Employee>>() {
-        });
-
-        mongoTemplate.insert(employees, "employee");
-        log.info("Loading '{}' example data", "employee");
-    }
-
-    private void loadResourcesHuman() throws URISyntaxException, IOException {
-        Collection<Human> humans = objectMapper.readValue(getFile("human.json"), new TypeReference<List<Human>>() {
-        });
-        mongoTemplate.insert(humans, "human");
-        log.info("Loading '{}' example data", "Human");
-    }
-
-
-    private InputStream getFile(String file) throws URISyntaxException {
-        return ExampleDataLoader.class.getResourceAsStream(String.format("/data/%s", file));
-    }
-
 
 }

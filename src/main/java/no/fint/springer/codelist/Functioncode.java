@@ -5,16 +5,16 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import no.fint.model.administrasjon.kodeverk.Ansvar;
-import no.fint.model.administrasjon.kodeverk.Stillingskode;
+import no.fint.model.administrasjon.kodeverk.Funksjon;
 import org.springframework.data.annotation.Id;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-public class ResponsibilityCode {
+public class Functioncode {
 
     @Id
     private String id;
-    private Ansvar responsibilityCode;
+    private Funksjon functionCode;
 }
