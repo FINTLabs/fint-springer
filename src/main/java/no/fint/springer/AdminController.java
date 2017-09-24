@@ -17,7 +17,7 @@ import java.net.URISyntaxException;
 public class AdminController {
 
     @Autowired
-    ExampleDataLoader exampleDataLoader;
+    private ExampleDataLoader exampleDataLoader;
 
     @RequestMapping(value = "reload-example-data", method = RequestMethod.GET)
     public ResponseEntity reloadExampleData() {

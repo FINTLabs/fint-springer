@@ -29,7 +29,7 @@ class ExampleDataLoaderSpec extends Specification {
         then:
         name == 'springer'
         collections.size() == exampleDataLoader.resources.length
-        collections.size() == Resources.values().length
+        collections.size() == Resources.constants().size()
         for (def collection : collections) {
             assert mongoTemplate.getCollection(collection).count() > 0
         }

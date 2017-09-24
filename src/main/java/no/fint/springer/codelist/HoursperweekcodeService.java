@@ -5,6 +5,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 
-@RepositoryRestResource(collectionResourceRel = Resources.HOURSPERWEEKCODES_VALUE, path = Resources.HOURSPERWEEKCODES_VALUE)
+@RepositoryRestResource(collectionResourceRel = Resources.HOURSPERWEEKCODES, path = Resources.HOURSPERWEEKCODES)
 public interface HoursperweekcodeService extends MongoRepository<Hoursperweekcode, String> {
 }

@@ -5,6 +5,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 
-@RepositoryRestResource(collectionResourceRel = Resources.HUMANS_VALUE, path = Resources.HUMANS_VALUE)
+@RepositoryRestResource(collectionResourceRel = Resources.HUMANS, path = Resources.HUMANS)
 public interface HumanService extends MongoRepository<Human, String> {
 }

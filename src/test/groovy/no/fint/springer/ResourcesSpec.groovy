@@ -10,6 +10,6 @@ class ResourcesSpec extends Specification {
         def resourceFiles = new ExampleDataLoader().resources
 
         then:
-        resourceFiles.length == Resources.values().length
+        resourceFiles.length == Resources.constants().size()
     }
 }

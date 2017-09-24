@@ -5,6 +5,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 
-@RepositoryRestResource(collectionResourceRel = Resources.ORGANISATIONS_VALUE, path = Resources.ORGANISATIONS_VALUE)
+@RepositoryRestResource(collectionResourceRel = Resources.ORGANISATIONS, path = Resources.ORGANISATIONS)
 public interface OrganisationService extends MongoRepository<Organisation, String> {
 }
