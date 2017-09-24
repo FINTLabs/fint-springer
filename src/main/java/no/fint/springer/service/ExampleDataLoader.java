@@ -48,7 +48,7 @@ public class ExampleDataLoader {
         }
     }
 
-    Resource[] getResources() throws IOException {
+    public Resource[] getResources() throws IOException {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver(this.getClass().getClassLoader());
         return resolver.getResources("classpath*:data/*.json");
     }

@@ -1,5 +1,7 @@
 # FINT Springer
 
+https://travis-ci.org/FINTprosjektet/fint-springer.svg?branch=master
+
 ## Add more data
 
 1. Create a new json-file containing the data inside `src/main/resources/data`.
