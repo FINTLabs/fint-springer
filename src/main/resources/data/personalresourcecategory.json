@@ -1,87 +1,122 @@
 [
   {
-    "personalResourceCategory": {
+    "personalresourcecategory": {
       "gyldighetsperiode": {
-        "slutt": "2017-06-05T14:15:15.569Z",
-        "start": "2017-06-05T14:15:15.569Z"
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2014-06-16T15.02.23"
       },
-      "kode": "F",
+      "kode": "1",
       "navn": "Fast",
-      "systemId": {
+      "systemid": {
         "gyldighetsperiode": {
-          "slutt": "2017-06-05T14:15:15.569Z",
-          "start": "2017-06-05T14:15:15.569Z"
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2014-06-16T15.02.23"
         },
-        "identifikatorverdi": "F"
+        "identifikatorverdi": "1"
       }
     }
   },
   {
-    "personalResourceCategory": {
+    "personalresourcecategory": {
       "gyldighetsperiode": {
-        "slutt": "2017-06-05T14:15:15.569Z",
-        "start": "2017-06-05T14:15:15.569Z"
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2014-10-29T13.15.20"
       },
-      "kode": "M",
+      "kode": "10",
       "navn": "Midlertidig",
-      "systemId": {
+      "systemid": {
         "gyldighetsperiode": {
-          "slutt": "2017-06-05T14:15:15.569Z",
-          "start": "2017-06-05T14:15:15.569Z"
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2014-10-29T13.15.20"
         },
-        "identifikatorverdi": "M"
+        "identifikatorverdi": "10"
       }
     }
   },
   {
-    "personalResourceCategory": {
+    "personalresourcecategory": {
       "gyldighetsperiode": {
-        "slutt": "2017-06-05T14:15:15.569Z",
-        "start": "2017-06-05T14:15:15.569Z"
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2014-06-16T15.02.23"
       },
-      "kode": "O",
+      "kode": "2",
       "navn": "Oppdragstaker",
-      "systemId": {
+      "systemid": {
         "gyldighetsperiode": {
-          "slutt": "2017-06-05T14:15:15.569Z",
-          "start": "2017-06-05T14:15:15.569Z"
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2014-06-16T15.02.23"
         },
-        "identifikatorverdi": "O"
+        "identifikatorverdi": "2"
       }
     }
   },
   {
-    "personalResourceCategory": {
+    "personalresourcecategory": {
       "gyldighetsperiode": {
-        "slutt": "2017-06-05T14:15:15.569Z",
-        "start": "2017-06-05T14:15:15.569Z"
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2013-04-24T22.32.46"
       },
-      "kode": "P",
-      "navn": "Politiker",
-      "systemId": {
+      "kode": "3",
+      "navn": "Leverandørrepersentant",
+      "systemid": {
         "gyldighetsperiode": {
-          "slutt": "2017-06-05T14:15:15.569Z",
-          "start": "2017-06-05T14:15:15.569Z"
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2013-04-24T22.32.46"
         },
-        "identifikatorverdi": "P"
+        "identifikatorverdi": "3"
       }
     }
   },
   {
-    "personalResourceCategory": {
+    "personalresourcecategory": {
       "gyldighetsperiode": {
-        "slutt": "2017-06-05T14:15:15.569Z",
-        "start": "2017-06-05T14:15:15.569Z"
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2008-12-16T15.24.30"
       },
-      "kode": "S",
+      "kode": "4",
       "navn": "Sluttet",
-      "systemId": {
+      "systemid": {
         "gyldighetsperiode": {
-          "slutt": "2017-06-05T14:15:15.569Z",
-          "start": "2017-06-05T14:15:15.569Z"
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2008-12-16T15.24.30"
         },
-        "identifikatorverdi": "S"
+        "identifikatorverdi": "4"
+      }
+    }
+  },
+  {
+    "personalresourcecategory": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2015-01-06T20.19.26"
+      },
+      "kode": "5",
+      "navn": "Nyansatt",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2015-01-06T20.19.26"
+        },
+        "identifikatorverdi": "5"
+      }
+    }
+  },
+  {
+    "personalresourcecategory": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2014-06-16T15.02.23"
+      },
+      "kode": "7",
+      "navn": "Politiker",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2014-06-16T15.02.23"
+        },
+        "identifikatorverdi": "7"
       }
     }
   }
 ]
+

@@ -1,20 +1,1159 @@
 [
   {
-    "functionCode": {
+    "functioncode": {
       "gyldighetsperiode": {
-        "slutt": "2017-06-05T14:35:49.879Z",
-        "start": "2017-06-05T14:35:49.879Z"
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
       },
-      "kode": "string",
-      "navn": "string",
-      "systemId": {
+      "kode": "000",
+      "navn": "\"Dummy\"- funksjon",
+      "systemid": {
         "gyldighetsperiode": {
-          "slutt": "2017-06-05T14:35:49.880Z",
-          "start": "2017-06-05T14:35:49.880Z"
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
         },
-        "identifikatorverdi": "string"
+        "identifikatorverdi": "000"
       }
-    },
-    "id": "string"
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "400",
+      "navn": "Politisk styring og kontrollorganer",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "400"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "410",
+      "navn": "Kontroll og revisjon",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "410"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "420",
+      "navn": "Administrasjon (adm. styring og ledelse)",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "420"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "421",
+      "navn": "Forvaltningsutgifter i eiendomsforvaltningen",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "421"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "430",
+      "navn": "Administrasjonslokaler",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "430"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "460",
+      "navn": "Tjenester utenfor ord. fylkeskom. ansvar",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "460"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "465",
+      "navn": "Interfylkeskommunale samarbeid (§ 27-samarbeid)",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "465"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "470",
+      "navn": "Premieavvik",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "470"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "471",
+      "navn": "Amortisering av tidligere års premieavvik pensjon",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "471"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2013-12-01T00.00.00Z"
+      },
+      "kode": "472",
+      "navn": "Pensjon",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2013-12-01T00.00.00Z"
+        },
+        "identifikatorverdi": "472"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2013-12-01T00.00.00Z"
+      },
+      "kode": "473",
+      "navn": "Premiefond",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2013-12-01T00.00.00Z"
+        },
+        "identifikatorverdi": "473"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "480",
+      "navn": "Diverse fellesutgifter",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "480"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "490",
+      "navn": "Interne serviceenheter",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "490"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "510",
+      "navn": "Skolelokaler, forvaltning, skyss og internater",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "510"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "515",
+      "navn": "Skoleforvaltning",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "515"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "520",
+      "navn": "Pedagogisk ledelse, fellesutg. og gjesteelevoppgj.",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "520"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "521",
+      "navn": "Studiespesialisering",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "521"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "522",
+      "navn": "Bygg- og anleggsteknikk",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "522"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "523",
+      "navn": "Elektrofag",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "523"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "524",
+      "navn": "Design- og håndverksfag",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "524"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "525",
+      "navn": "Restaurant- og næringsmiddelfag",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "525"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "526",
+      "navn": "Helse- og oppvekstfag",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "526"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "527",
+      "navn": "Idrettsfag",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "527"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "528",
+      "navn": "Teknikk og industriell produksjon",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "528"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "529",
+      "navn": "Musikk, dans og drama",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "529"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "530",
+      "navn": "Medier og kommunikasjon",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "530"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "531",
+      "navn": "Naturbruk",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "531"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "532",
+      "navn": "Service og samferdsel",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "532"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2016-01-01T00.00.00Z"
+      },
+      "kode": "533",
+      "navn": "Kunst, design og arkitektur",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2016-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "533"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "554",
+      "navn": "Tekniske fagskoler",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "554"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "559",
+      "navn": "Landslinjer",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "559"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2013-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "560",
+      "navn": "Spesialundervisning og særskilt tilpass. oppl.",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2013-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "560"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2013-12-01T00.00.00Z"
+      },
+      "kode": "561",
+      "navn": "Oppfølgningstjenesten og pedagogisk psykologisk tjeneste",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2013-12-01T00.00.00Z"
+        },
+        "identifikatorverdi": "561"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2013-12-01T00.00.00Z"
+      },
+      "kode": "562",
+      "navn": "Spesialundervisning og særskilt tilpasset opplæring",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2013-12-01T00.00.00Z"
+        },
+        "identifikatorverdi": "562"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "570",
+      "navn": "Fagopplæring i arbeidslivet",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "570"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "581",
+      "navn": "Voksenopplæring fullfinansiert av fylkeskom.",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "581"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "590",
+      "navn": "Andre undervisningsformål",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "590"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "660",
+      "navn": "Tannhelsetjeneste - fellesfunksjoner",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "660"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "665",
+      "navn": "Tannhelse - pasientbehandling",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "665"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2014-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "700",
+      "navn": "UTGÅTT - Tilrettelegging og støttefunksjoner for næringslivet",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2014-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "700"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2015-01-01T00.00.00Z"
+      },
+      "kode": "701",
+      "navn": "Tilrettelegging, støttefunksjoner og finansieringsbistand for næringslivet",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2015-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "701"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2014-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "705",
+      "navn": "UTGÅTT - Finansieringsbistand overfor næringslivet",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2014-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "705"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "710",
+      "navn": "Fylkeskommunal næringsvirksomhet",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "710"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2013-12-01T00.00.00Z"
+      },
+      "kode": "711",
+      "navn": "Konsesjonskraft, kraftrettigheter og annen kraft for videresalg",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2013-12-01T00.00.00Z"
+        },
+        "identifikatorverdi": "711"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "715",
+      "navn": "Lokal og regional utvikling",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "715"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "716",
+      "navn": "Friluftsliv",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "716"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "722",
+      "navn": "Fylkesveier - miljø- og trafikksikkerhet",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "722"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "730",
+      "navn": "Bilruter",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "730"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "731",
+      "navn": "Fylkesveiferjer",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "731"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "732",
+      "navn": "Båtuter",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "732"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "733",
+      "navn": "Transport for funksjonshemmede",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "733"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "734",
+      "navn": "Sporveier og forstadsbaner",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "734"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "740",
+      "navn": "Bibliotek",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "740"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "750",
+      "navn": "Kulturminnevern",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "750"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "760",
+      "navn": "Museer",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "760"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "771",
+      "navn": "Kunstformidling",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "771"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "772",
+      "navn": "Kunstproduksjon",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "772"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "775",
+      "navn": "Idrett",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "775"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2012-07-01T00.00.00Z"
+      },
+      "kode": "790",
+      "navn": "Andre kulturaktiviteter",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2012-07-01T00.00.00Z"
+        },
+        "identifikatorverdi": "790"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "800",
+      "navn": "Skatt på inntekt og formue",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "800"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "840",
+      "navn": "Statlig rammetilskudd og øvrige generelle statstilskudd",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "840"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2015-01-01T00.00.00Z"
+      },
+      "kode": "841",
+      "navn": "Kompensasjon for merverdiavgift i investeringsregnskapet",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2015-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "841"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2014-12-01T00.00.00Z",
+        "start": "2014-01-01T00.00.00Z"
+      },
+      "kode": "850",
+      "navn": "UTGÅTT - Generelt statstilskudd vedrørende flyktninger m.v.",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2014-12-01T00.00.00Z",
+          "start": "2014-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "850"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "860",
+      "navn": "Motpost avskrivninger",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "860"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "870",
+      "navn": "Renter/utbytte og lån (innlån og utlån)",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "870"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "880",
+      "navn": "Interne finansieringstransaksjoner",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "880"
+      }
+    }
+  },
+  {
+    "functioncode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "899",
+      "navn": "Årets regnskapsmessige merforbruk/mindreforbruk",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "899"
+      }
+    }
   }
 ]
+

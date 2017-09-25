@@ -2,15 +2,83 @@
   {
     "hoursperweekcode": {
       "gyldighetsperiode": {
-        "slutt": "2017-06-05T00:00:00.000Z",
-        "start": "2017-06-05T00:00:00.000Z"
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "33,6",
+      "navn": "33,6 timers uke",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "33,6"
+      }
+    }
+  },
+  {
+    "hoursperweekcode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "34,0",
+      "navn": "34,0 timers uke",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "34,0"
+      }
+    }
+  },
+  {
+    "hoursperweekcode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "34,5",
+      "navn": "34,5 timers uke",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "34,5"
+      }
+    }
+  },
+  {
+    "hoursperweekcode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "35,0",
+      "navn": "35,0 timers uke",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "35,0"
+      }
+    }
+  },
+  {
+    "hoursperweekcode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
       },
       "kode": "35,5",
       "navn": "35,5 timers uke",
-      "systemId": {
+      "systemid": {
         "gyldighetsperiode": {
-          "slutt": "2017-06-05T00:00:00.000Z",
-          "start": "2017-06-05T00:00:00.000Z"
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
         },
         "identifikatorverdi": "35,5"
       }
@@ -19,15 +87,15 @@
   {
     "hoursperweekcode": {
       "gyldighetsperiode": {
-        "slutt": "2017-06-05T00:00:00.000Z",
-        "start": "2017-06-05T00:00:00.000Z"
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
       },
       "kode": "36,0",
       "navn": "36,0 timers uke",
-      "systemId": {
+      "systemid": {
         "gyldighetsperiode": {
-          "slutt": "2017-06-05T00:00:00.000Z",
-          "start": "2017-06-05T00:00:00.000Z"
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
         },
         "identifikatorverdi": "36,0"
       }
@@ -36,18 +104,138 @@
   {
     "hoursperweekcode": {
       "gyldighetsperiode": {
-        "slutt": "2017-06-05T00:00:00.000Z",
-        "start": "2017-06-05T00:00:00.000Z"
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
       },
       "kode": "37,5",
       "navn": "37,5 timers uke",
-      "systemId": {
+      "systemid": {
         "gyldighetsperiode": {
-          "slutt": "2017-06-05T00:00:00.000Z",
-          "start": "2017-06-05T00:00:00.000Z"
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
         },
         "identifikatorverdi": "37,5"
       }
     }
+  },
+  {
+    "hoursperweekcode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "40",
+      "navn": "40 timers uke",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "40"
+      }
+    }
+  },
+  {
+    "hoursperweekcode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "40,0",
+      "navn": "40,0 timers uke",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "40,0"
+      }
+    }
+  },
+  {
+    "hoursperweekcode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "42,0",
+      "navn": "42,0 timers uke",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "42,0"
+      }
+    }
+  },
+  {
+    "hoursperweekcode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "BRANN",
+      "navn": "Brannordning",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "BRANN"
+      }
+    }
+  },
+  {
+    "hoursperweekcode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "DAGTID",
+      "navn": "Dagtidsordning",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "DAGTID"
+      }
+    }
+  },
+  {
+    "hoursperweekcode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "FYSIO",
+      "navn": "Fysioterapiordning",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "FYSIO"
+      }
+    }
+  },
+  {
+    "hoursperweekcode": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "1994-01-01T00.00.00Z"
+      },
+      "kode": "TURNUS",
+      "navn": "Turnusordning",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "1994-01-01T00.00.00Z"
+        },
+        "identifikatorverdi": "TURNUS"
+      }
+    }
   }
 ]
+

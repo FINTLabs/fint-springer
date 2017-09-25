@@ -1,49 +1,428 @@
 [
   {
-    "employeementType": {
+    "employeementtype": {
       "gyldighetsperiode": {
-        "slutt": "2017-06-05T14:21:58.296Z",
-        "start": "2017-06-05T14:21:58.296Z"
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
       },
       "kode": "A",
-      "navn": "Lærling",
-      "systemId": {
+      "navn": "Fast",
+      "systemid": {
         "gyldighetsperiode": {
-          "slutt": "2017-06-05T14:21:58.296Z",
-          "start": "2017-06-05T14:21:58.296Z"
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
         },
         "identifikatorverdi": "A"
       }
-    },
-    "employeementType": {
+    }
+  },
+  {
+    "employeementtype": {
       "gyldighetsperiode": {
-        "slutt": "2017-06-05T14:21:58.296Z",
-        "start": "2017-06-05T14:21:58.296Z"
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
       },
       "kode": "B",
-      "navn": "Fast",
-      "systemId": {
+      "navn": "Timelønnet",
+      "systemid": {
         "gyldighetsperiode": {
-          "slutt": "2017-06-05T14:21:58.296Z",
-          "start": "2017-06-05T14:21:58.296Z"
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
         },
         "identifikatorverdi": "B"
       }
-    },
-    "employeementType": {
+    }
+  },
+  {
+    "employeementtype": {
       "gyldighetsperiode": {
-        "slutt": "2017-06-05T14:21:58.296Z",
-        "start": "2017-06-05T14:21:58.296Z"
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
       },
       "kode": "C",
-      "navn": "Timelønnet",
-      "systemId": {
+      "navn": "Lærlinger",
+      "systemid": {
         "gyldighetsperiode": {
-          "slutt": "2017-06-05T14:21:58.296Z",
-          "start": "2017-06-05T14:21:58.296Z"
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
         },
         "identifikatorverdi": "C"
       }
     }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "D",
+      "navn": "Folkevalgt/politiker",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "D"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "E",
+      "navn": "Midlertidig",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "E"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "F",
+      "navn": "Engasjement < 6 mnd",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "F"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "G",
+      "navn": "Engasjement > 6 mnd",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "G"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "H",
+      "navn": "Godtgjørelse",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "H"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "I",
+      "navn": "Oppdragstaker",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "I"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "J",
+      "navn": "Pensjonistlønn",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "J"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "K",
+      "navn": "Foreldreperm. 80%",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "K"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "L",
+      "navn": "Foreldreperm. 100%",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "L"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "M",
+      "navn": "Permisjon lønnet",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "M"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "N",
+      "navn": "Permisjon ulønnet",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "N"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "O",
+      "navn": "Vikar - diverse",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "O"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "P",
+      "navn": "Vikar - ferie",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "P"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "Q",
+      "navn": "Vikar - foreldreperm. 80%",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "Q"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "R",
+      "navn": "Vikar - foreldreperm. 100%",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "R"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "S",
+      "navn": "Vikar - sykdom",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "S"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "T",
+      "navn": "Vikar - ulønnet permisjon",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "T"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2014-07-21T11.08.32Z"
+      },
+      "kode": "U",
+      "navn": "Beredskap Brann",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2014-07-21T11.08.32Z"
+        },
+        "identifikatorverdi": "U"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2014-12-17T14.08.50Z"
+      },
+      "kode": "V",
+      "navn": "Hospitering/sysselsetting/praksisplass",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2014-12-17T14.08.50Z"
+        },
+        "identifikatorverdi": "V"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2014-07-21T11.14.02Z"
+      },
+      "kode": "W",
+      "navn": "Eksamensvakt / Sensor",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2014-07-21T11.14.02Z"
+        },
+        "identifikatorverdi": "W"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2014-07-21T11.14.02Z"
+      },
+      "kode": "Y",
+      "navn": "Konstituert",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2014-07-21T11.14.02Z"
+        },
+        "identifikatorverdi": "Y"
+      }
+    }
+  },
+  {
+    "employeementtype": {
+      "gyldighetsperiode": {
+        "slutt": "2099-12-01T00.00.00Z",
+        "start": "2009-08-31T14.08.20Z"
+      },
+      "kode": "Z",
+      "navn": "Annet",
+      "systemid": {
+        "gyldighetsperiode": {
+          "slutt": "2099-12-01T00.00.00Z",
+          "start": "2009-08-31T14.08.20Z"
+        },
+        "identifikatorverdi": "Z"
+      }
+    }
   }
 ]
+
