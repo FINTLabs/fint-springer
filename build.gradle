@@ -1,14 +1,14 @@
 buildscript {
     apply from: 'https://raw.githubusercontent.com/FINTprosjektet/fint-buildscripts/v1.0.14/dependencies.gradle'
-	ext {
-		springBootVersion = springBootVersion
-	}
-	repositories {
-		mavenCentral()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-	}
+    ext {
+        springBootVersion = springBootVersion
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
 }
 
 plugins {
@@ -24,7 +24,7 @@ sourceCompatibility = 1.8
 
 apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.14/version.gradle'
 repositories {
-	mavenCentral()
+    mavenCentral()
     jcenter()
     repositories {
         maven {
@@ -35,19 +35,19 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-web')
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
     compile("com.github.springfox.loader:springfox-loader:${springfoxLoaderVersion}")
     compile("org.springframework.boot:spring-boot-starter-data-rest")
-
     compile("io.springfox:springfox-data-rest:2.7.0")
 
     compile('no.fint:fint-administrasjon-model-java:1.1.0-rc.1.8')
 
     compileOnly('org.projectlombok:lombok')
 
+    testCompile('no.fint:fint-test-utils:0.0.4')
     testCompile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile("org.spockframework:spock-spring:${spockSpringVersion}")
     testCompile("org.spockframework:spock-core:${spockSpringVersion}")
 }
