@@ -2,14 +2,6 @@
 
 [![Build Status](https://travis-ci.org/FINTprosjektet/fint-springer.svg?branch=master)](https://travis-ci.org/FINTprosjektet/fint-springer)
 
-## Add more data
-
-1. Create a new json-file containing the data inside `src/main/resources/data`.
-2. Create a new model class, either in its own package inside `no.fint.springer`, or the existing package `no.fint.codelist`. The name of the model should be the same as the name of the json-file.
-3. Add a service-class named the same as the model and with `Service` at the end.
-4. Update the `Resources`-enum with the new value.
-5. Run the mongodb integration tests `ExampleDataLoaderSpec`.
-
 ## Run locally
 
 Start the `TestApplication` class in `src/test/groovy`, this will start an embedded mongodb.
@@ -18,6 +10,8 @@ Start the `TestApplication` class in `src/test/groovy`, this will start an embed
 
 Enable by setting this system property:  
 `-DenableMongodbTests=true`
+
+This will start a local mongodb by using [Embedded MongoDB](https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo).
 
 ## References
 

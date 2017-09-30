@@ -22,9 +22,8 @@ apply plugin: 'org.springframework.boot'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
-apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.14/version.gradle'
 repositories {
-    mavenCentral()
+    mavenLocal()
     jcenter()
     repositories {
         maven {
@@ -36,12 +35,10 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
-    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    compile('org.springframework.boot:spring-boot-starter-data-mongodb')
     compile("com.github.springfox.loader:springfox-loader:${springfoxLoaderVersion}")
-    compile("org.springframework.boot:spring-boot-starter-data-rest")
-    compile("io.springfox:springfox-data-rest:2.7.0")
 
-    compile('no.fint:fint-administrasjon-model-java:1.1.0-rc.1.8')
+    compile('no.fint:fint-springer-model:0.0.1')
 
     compileOnly('org.projectlombok:lombok')
 
