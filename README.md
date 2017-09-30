@@ -15,4 +15,4 @@ This will start a local mongodb by using [Embedded MongoDB](https://github.com/f
 
 ## References
 
-* [Embedded mongodb](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-nosql.html#boot-features-mongo-embedded)
+* [Spring Embedded mongodb](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-nosql.html#boot-features-mongo-embedded)
