@@ -1,6 +1,6 @@
 springfox:
  version: '@version@'
- title: 'fint-springer'
+ title: 'FINT Springer'
 
 spring:
  jackson:

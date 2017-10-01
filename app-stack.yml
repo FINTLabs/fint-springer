@@ -7,7 +7,6 @@ services:
      - "9002:8080"
    environment:
     TZ: Europe/Oslo
-    springfox.title: "FINT Springer"
     spring.data.mongodb.uri: mongodb://db:27017/springer
    deploy:
     placement:
@@ -44,12 +43,11 @@ services:
     - fint_springer
 
   adapter-personal:
-   image: fint/springer-adapter:latest
+   image: fint/springer-adapter-personal:latest
    ports:
      - "9003:8080"
    environment:
     TZ: Europe/Oslo
-    springfox.title: "FINT Springer Adapter Personal"
     fint.springer.base-url: "http://springer:8080"
     fint.adapter.organizations: pwf.no
     fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/personal/provider/sse/%s
@@ -76,7 +74,6 @@ services:
      - "9004:8080"
    environment:
     TZ: Europe/Oslo
-    springfox.title: "FINT Springer Adapter Organisasjon"
     fint.springer.base-url: "http://springer:8080"
     fint.adapter.organizations: pwf.no
     fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/organisasjon/provider/sse/%s
@@ -96,6 +93,32 @@ services:
     - fint_springer
    depends_on:
     - springer
+
+  adapter-administrasjon-kodeverk:
+     image: fint/springer-adapter-administrasjon-kodeverk:latest
+     ports:
+       - "9005:8080"
+     environment:
+      TZ: Europe/Oslo
+      fint.springer.base-url: "http://springer:8080"
+      fint.adapter.organizations: pwf.no
+      fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/kodeverk/provider/sse/%s
+      fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/kodeverk/provider/status
+      fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/kodeverk/provider/response
+     deploy:
+      placement:
+       constraints:
+        - node.role == worker
+      replicas: 1
+      restart_policy:
+       condition: on-failure
+       delay: 5s
+       max_attempts: 3
+       window: 120s
+     networks:
+      - fint_springer
+     depends_on:
+      - springer
 
 volumes:
  springer-db-volume:
