@@ -51,7 +51,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-mongodb')
     compile("com.github.springfox.loader:springfox-loader:${springfoxLoaderVersion}")
 
-    compile('no.fint:fint-springer-model:2.2.10-1')
+    compile('no.fint:fint-springer-model:3.0-2.2.20')
 
     compileOnly('org.projectlombok:lombok')
 
