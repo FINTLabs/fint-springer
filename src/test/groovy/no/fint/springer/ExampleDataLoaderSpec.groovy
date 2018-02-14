@@ -6,7 +6,8 @@ import org.springframework.data.mongodb.core.MongoTemplate
 import spock.lang.Requires
 import spock.lang.Specification
 
-@Requires({ Boolean.valueOf(properties['enableMongodbTests']) })
+// TODO Doesn't work?
+@Requires({ env.ENABLE_MONGODB_TESTS })
 @SpringBootTest(classes = TestApplication)
 class ExampleDataLoaderSpec extends Specification {
 

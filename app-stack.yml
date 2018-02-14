@@ -2,128 +2,181 @@ version: '3'
 
 services:
   springer:
-   image: fint/springer:latest
-   ports:
-     - "9002:8080"
-   environment:
-    TZ: Europe/Oslo
-    spring.data.mongodb.uri: mongodb://db:27017/springer
-   deploy:
-    placement:
-     constraints:
-      - node.role == worker
-    replicas: 1
-    restart_policy:
-     condition: on-failure
-     delay: 5s
-     max_attempts: 3
-     window: 120s
-   networks:
-    - fint_springer
-   depends_on:
-    - db
+    image: dtr.rogfk.no/fint-beta/springer:3.1-2.4.0
+    ports:
+      - "9002:8080"
+    environment:
+      TZ: Europe/Oslo
+      spring.data.mongodb.uri: mongodb://db:27017/springer
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    depends_on:
+      - db
 
   db:
-   image: mongo:3.4.4
-   environment:
-    TZ: Europe/Oslo
-   volumes:
-    - springer-db-volume:/data/db
-   deploy:
-    placement:
-     constraints:
-      - node.hostname == sr-is-docker-02
-    replicas: 1
-    restart_policy:
-     condition: on-failure
-     delay: 5s
-     max_attempts: 3
-     window: 120s
-   networks:
-    - fint_springer
+    image: mongo:3.4.4
+    environment:
+      TZ: Europe/Oslo
+    volumes:
+      - db-volume:/data/db
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+
+  express:
+    image: mongo-express
+    ports:
+      - "9009:8081"
+    environment:
+      ME_CONFIG_MONGODB_SERVER: db
+    depends_on:
+      - db
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
 
   adapter-personal:
-   image: fint/springer-adapter-personal:latest
-   ports:
-     - "9003:8080"
-   environment:
-    TZ: Europe/Oslo
-    fint.springer.base-url: "http://springer:8080"
-    fint.adapter.organizations: pwf.no
-    fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/personal/provider/sse/%s
-    fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/personal/provider/status
-    fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/personal/provider/response
-   deploy:
-    placement:
-     constraints:
-      - node.role == worker
-    replicas: 1
-    restart_policy:
-     condition: on-failure
-     delay: 5s
-     max_attempts: 3
-     window: 120s
-   networks:
-    - fint_springer
-   depends_on:
-    - springer
+    image: dtr.rogfk.no/fint-beta/springer-adapter-personal:1.1.0-1
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    ports:
+      - "9003:8080"
+    environment:
+      TZ: Europe/Oslo
+      fint.springer.base-url: "http://springer:8080"
+      fint.adapter.organizations: pwf.no
+      fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/personal/provider/sse/%s
+      fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/personal/provider/status
+      fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/personal/provider/response
+    depends_on:
+      - springer
+
+  adapter-fullmakt:
+    image: dtr.rogfk.no/fint-beta/springer-adapter-fullmakt:3.1-2.4.0
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    ports:
+      - "9003:8080"
+    environment:
+      TZ: Europe/Oslo
+      fint.springer.base-url: "http://springer:8080"
+      fint.adapter.organizations: pwf.no
+      fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/fullmakt/provider/sse/%s
+      fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/fullmakt/provider/status
+      fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/fullmakt/provider/response
+    depends_on:
+      - springer
 
   adapter-organisation:
-   image: fint/springer-adapter-organisasjon:latest
-   ports:
-     - "9004:8080"
-   environment:
-    TZ: Europe/Oslo
-    fint.springer.base-url: "http://springer:8080"
-    fint.adapter.organizations: pwf.no
-    fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/organisasjon/provider/sse/%s
-    fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/organisasjon/provider/status
-    fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/organisasjon/provider/response
-   deploy:
-    placement:
-     constraints:
-      - node.role == worker
-    replicas: 1
-    restart_policy:
-     condition: on-failure
-     delay: 5s
-     max_attempts: 3
-     window: 120s
-   networks:
-    - fint_springer
-   depends_on:
-    - springer
+    image: dtr.rogfk.no/fint-beta/springer-adapter-organisasjon:1.0.0-3
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    ports:
+      - "9004:8080"
+    environment:
+      TZ: Europe/Oslo
+      fint.springer.base-url: "http://springer:8080"
+      fint.adapter.organizations: pwf.no
+      fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/organisasjon/provider/sse/%s
+      fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/organisasjon/provider/status
+      fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/organisasjon/provider/response
+    depends_on:
+      - springer
 
   adapter-administrasjon-kodeverk:
-     image: fint/springer-adapter-administrasjon-kodeverk:latest
-     ports:
-       - "9005:8080"
-     environment:
+    image: dtr.rogfk.no/fint-beta/springer-adapter-administrasjon-kodeverk:1.0.0-3
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    ports:
+      - "9005:8080"
+    environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
       fint.adapter.organizations: pwf.no
       fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/kodeverk/provider/sse/%s
       fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/kodeverk/provider/status
       fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/administrasjon/kodeverk/provider/response
-     deploy:
+    depends_on:
+      - springer
+
+  adapter-felles-kodeverk:
+    image: dtr.rogfk.no/fint-beta/springer-adapter-felles-kodeverk:1.0.1-1
+    deploy:
       placement:
-       constraints:
-        - node.role == worker
+        constraints:
+          - node.role == worker
       replicas: 1
       restart_policy:
-       condition: on-failure
-       delay: 5s
-       max_attempts: 3
-       window: 120s
-     networks:
-      - fint_springer
-     depends_on:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    ports:
+      - "9010:8080"
+    environment:
+      TZ: Europe/Oslo
+      fint.springer.base-url: "http://springer:8080"
+      fint.adapter.organizations: fint.felles.kodeverk
+      fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/felles/kodeverk/provider/sse/%s
+      fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/felles/kodeverk/provider/status
+      fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/felles/kodeverk/provider/response
+      logging.level.no.fint: DEBUG
+    depends_on:
       - springer
 
 volumes:
- springer-db-volume:
-
-networks:
- fint_springer:
-  driver: overlay
-  external: false
+  db-volume:

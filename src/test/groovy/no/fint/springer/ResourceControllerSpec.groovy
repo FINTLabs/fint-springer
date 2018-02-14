@@ -9,7 +9,8 @@ import spock.lang.Requires
 import spock.lang.Specification
 import spock.lang.Unroll
 
-@Requires({ Boolean.valueOf(properties['enableMongodbTests']) })
+// TODO Doesn't work?
+@Requires({ env.ENABLE_MONGODB_TESTS })
 @SpringBootTest(classes = TestApplication, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class ResourceControllerSpec extends Specification {
 
