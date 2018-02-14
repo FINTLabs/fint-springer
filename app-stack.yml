@@ -2,7 +2,7 @@ version: '3'
 
 services:
   springer:
-    image: dtr.rogfk.no/fint-beta/springer:3.1.1-2.4.0
+    image: dtr.rogfk.no/fint-beta/springer:3.2.0-2.4.0
     ports:
       - "9002:8080"
     environment:
@@ -82,7 +82,7 @@ services:
       - springer
 
   adapter-fullmakt:
-    image: dtr.rogfk.no/fint-beta/springer-adapter-fullmakt:3.1-2.4.0
+    image: dtr.rogfk.no/fint-beta/springer-adapter-fullmakt:3.2.0-2.4.0
     deploy:
       placement:
         constraints:
