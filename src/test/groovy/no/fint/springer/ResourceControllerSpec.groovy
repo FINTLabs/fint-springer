@@ -1,6 +1,6 @@
 package no.fint.springer
 
-import no.fint.springer.models.administration.employee.Employee
+import no.fint.springer.models.administration.personnel.Employee
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.web.client.TestRestTemplate
