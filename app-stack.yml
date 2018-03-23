@@ -69,8 +69,6 @@ services:
         delay: 5s
         max_attempts: 3
         window: 120s
-    ports:
-      - "9003:8080"
     environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
@@ -93,8 +91,6 @@ services:
         delay: 5s
         max_attempts: 3
         window: 120s
-    ports:
-      - "9011:8091"
     environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
@@ -117,8 +113,6 @@ services:
         delay: 5s
         max_attempts: 3
         window: 120s
-    ports:
-      - "9004:8080"
     environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
@@ -141,8 +135,6 @@ services:
         delay: 5s
         max_attempts: 3
         window: 120s
-    ports:
-      - "9005:8080"
     environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
@@ -165,8 +157,6 @@ services:
         delay: 5s
         max_attempts: 3
         window: 120s
-    ports:
-      - "9010:8080"
     environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
@@ -190,8 +180,6 @@ services:
         delay: 5s
         max_attempts: 3
         window: 120s
-    ports:
-      - "9012:8091"
     environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
@@ -214,8 +202,6 @@ services:
         delay: 5s
         max_attempts: 3
         window: 120s
-    ports:
-      - "9013:8091"
     environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
@@ -238,8 +224,6 @@ services:
         delay: 5s
         max_attempts: 3
         window: 120s
-    ports:
-      - "9014:8091"
     environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
@@ -262,8 +246,6 @@ services:
         delay: 5s
         max_attempts: 3
         window: 120s
-    ports:
-      - "9015:8091"
     environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
