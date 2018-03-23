@@ -2,7 +2,7 @@ version: '3'
 
 services:
   springer:
-    image: dtr.rogfk.no/fint-beta/springer:3.3.2-2.4.0
+    image: dtr.rogfk.no/fint-beta/springer:3.7.0-2.6.0-rc-1
     ports:
       - "9002:8080"
     environment:
@@ -58,7 +58,7 @@ services:
         window: 120s
 
   adapter-personal:
-    image: dtr.rogfk.no/fint-beta/springer-adapter-personal:1.1.0-1
+    image: dtr.rogfk.no/fint-beta/springer-adapter-personal:3.5.3-2.6.0-rc-1
     deploy:
       placement:
         constraints:
@@ -105,7 +105,7 @@ services:
     depends_on:
       - springer
 
-  adapter-organisation:
+  adapter-organisasjon:
     image: dtr.rogfk.no/fint-beta/springer-adapter-organisasjon:1.0.0-3
     deploy:
       placement:
@@ -130,7 +130,7 @@ services:
       - springer
 
   adapter-administrasjon-kodeverk:
-    image: dtr.rogfk.no/fint-beta/springer-adapter-administrasjon-kodeverk:1.0.0-3
+    image: dtr.rogfk.no/fint-beta/springer-adapter-administrasjon-kodeverk:3.5.0-2.6.0-rc-1
     deploy:
       placement:
         constraints:
@@ -179,7 +179,7 @@ services:
       - springer
 
   adapter-elev:
-    image: dtr.rogfk.no/fint-beta/springer-adapter-elev:3.3.2-2.4.0
+    image: dtr.rogfk.no/fint-beta/springer-adapter-elev:3.7.0-2.6.0-rc-1
     deploy:
       placement:
         constraints:
@@ -199,6 +199,78 @@ services:
       fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/utdanning/elev/provider/sse/%s
       fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/utdanning/elev/provider/status
       fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/utdanning/elev/provider/response
+    depends_on:
+      - springer
+
+  adapter-utdanningsprogram:
+    image: dtr.rogfk.no/fint-beta/springer-adapter-utdanningsprogram:3.6.5-2.6.0-rc-1
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    ports:
+      - "9012:8091"
+    environment:
+      TZ: Europe/Oslo
+      fint.springer.base-url: "http://springer:8080"
+      fint.adapter.organizations: pwf.no
+      fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/utdanning/utdanningsprogram/provider/sse/%s
+      fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/utdanning/utdanningsprogram/provider/status
+      fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/utdanning/utdanningsprogram/provider/response
+    depends_on:
+      - springer
+
+  adapter-timeplan:
+    image: dtr.rogfk.no/fint-beta/springer-adapter-timeplan:3.6.5-2.6.0-rc-1
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    ports:
+      - "9012:8091"
+    environment:
+      TZ: Europe/Oslo
+      fint.springer.base-url: "http://springer:8080"
+      fint.adapter.organizations: pwf.no
+      fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/utdanning/timeplan/provider/sse/%s
+      fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/utdanning/timeplan/provider/status
+      fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/utdanning/timeplan/provider/response
+    depends_on:
+      - springer
+
+  adapter-vurdering:
+    image: dtr.rogfk.no/fint-beta/springer-adapter-vurdering:3.7.0-2.6.0-rc-1
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    ports:
+      - "9012:8091"
+    environment:
+      TZ: Europe/Oslo
+      fint.springer.base-url: "http://springer:8080"
+      fint.adapter.organizations: pwf.no
+      fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/utdanning/vurdering/provider/sse/%s
+      fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/utdanning/vurdering/provider/status
+      fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/utdanning/vurdering/provider/response
     depends_on:
       - springer
 
