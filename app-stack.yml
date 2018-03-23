@@ -215,7 +215,7 @@ services:
         max_attempts: 3
         window: 120s
     ports:
-      - "9012:8091"
+      - "9013:8091"
     environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
@@ -239,7 +239,7 @@ services:
         max_attempts: 3
         window: 120s
     ports:
-      - "9012:8091"
+      - "9014:8091"
     environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
@@ -263,7 +263,7 @@ services:
         max_attempts: 3
         window: 120s
     ports:
-      - "9012:8091"
+      - "9015:8091"
     environment:
       TZ: Europe/Oslo
       fint.springer.base-url: "http://springer:8080"
