@@ -2,7 +2,7 @@ version: '3'
 
 services:
   springer:
-    image: dtr.rogfk.no/fint-beta/springer:3.9.2-2.7.0
+    image: dtr.rogfk.no/fint-beta/springer:3.10.0-2.7.0
     ports:
       - "9002:8080"
     environment:
@@ -191,7 +191,7 @@ services:
       - springer
 
   adapter-utdanningsprogram:
-    image: dtr.rogfk.no/fint-beta/springer-adapter-utdanningsprogram:3.6.5-2.6.0-rc-1
+    image: dtr.rogfk.no/fint-beta/springer-adapter-utdanningsprogram:3.10.0-2.7.0
     deploy:
       placement:
         constraints:
@@ -213,7 +213,7 @@ services:
       - springer
 
   adapter-timeplan:
-    image: dtr.rogfk.no/fint-beta/springer-adapter-timeplan:3.6.5-2.6.0-rc-1
+    image: dtr.rogfk.no/fint-beta/springer-adapter-timeplan:3.10.0-2.7.0
     deploy:
       placement:
         constraints:
