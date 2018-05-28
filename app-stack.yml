@@ -2,7 +2,7 @@ version: '3'
 
 services:
   springer:
-    image: dtr.rogfk.no/fint-beta/springer:3.10.0-2.7.0
+    image: dtr.rogfk.no/fint-beta/springer:3.10.1-2.7.0
     ports:
       - "9002:8080"
     environment:
@@ -169,7 +169,7 @@ services:
       - springer
 
   adapter-elev:
-    image: dtr.rogfk.no/fint-beta/springer-adapter-elev:3.9.2-2.7.0
+    image: dtr.rogfk.no/fint-beta/springer-adapter-elev:3.10.1-2.7.0
     deploy:
       placement:
         constraints:
@@ -187,6 +187,7 @@ services:
       fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/utdanning/elev/provider/sse/%s
       fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/utdanning/elev/provider/status
       fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/utdanning/elev/provider/response
+      logging.level.no.fint.provider.springer.service: DEBUG
     depends_on:
       - springer
 
@@ -209,11 +210,12 @@ services:
       fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/utdanning/utdanningsprogram/provider/sse/%s
       fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/utdanning/utdanningsprogram/provider/status
       fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/utdanning/utdanningsprogram/provider/response
+      logging.level.no.fint.provider.springer.service: DEBUG
     depends_on:
       - springer
 
   adapter-timeplan:
-    image: dtr.rogfk.no/fint-beta/springer-adapter-timeplan:3.10.0-2.7.0
+    image: dtr.rogfk.no/fint-beta/springer-adapter-timeplan:3.10.1-2.7.0
     deploy:
       placement:
         constraints:
@@ -231,6 +233,7 @@ services:
       fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/utdanning/timeplan/provider/sse/%s
       fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/utdanning/timeplan/provider/status
       fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/utdanning/timeplan/provider/response
+      logging.level.no.fint.provider.springer.service: DEBUG
     depends_on:
       - springer
 
@@ -253,6 +256,7 @@ services:
       fint.adapter.sse-endpoint: https://play-with-fint.felleskomponent.no/utdanning/vurdering/provider/sse/%s
       fint.adapter.status-endpoint: https://play-with-fint.felleskomponent.no/utdanning/vurdering/provider/status
       fint.adapter.response-endpoint: https://play-with-fint.felleskomponent.no/utdanning/vurdering/provider/response
+      logging.level.no.fint.provider.springer.service: DEBUG
     depends_on:
       - springer
 
