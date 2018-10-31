@@ -1,24 +1,22 @@
 pipeline {
-    agent none
+    agent { label 'docker' }
     stages {
         stage('Build') {
-            agent { label 'docker' }
             steps {
                 script {
-                    props=readProperties file: 'gradle.properties'
-                    VERSION="${props.version}"
+                    props = readProperties file: 'gradle.properties'
+                    VERSION = "${props.version}"
                 }
-                sh "docker build -t 'dtr.rogfk.no/fint-beta/springer:${VERSION}' ."
+                sh "docker build -t 'dtr.fintlabs.no/beta/springer:${VERSION}' ."
             }
         }
         stage('Publish') {
-            agent { label 'docker' }
             when {
                 branch 'master'
             }
             steps {
-                withDockerRegistry([credentialsId: 'dtr-rogfk-no', url: 'https://dtr.rogfk.no']) {
-                    sh "docker push 'dtr.rogfk.no/fint-beta/springer:${VERSION}'"
+                withDockerRegistry([credentialsId: 'dtr-fintlabs-no', url: 'https://dtr.fintlabs.no']) {
+                    sh "docker push 'dtr.fintlabs.no/beta/springer:${VERSION}'"
                 }
             }
         }
